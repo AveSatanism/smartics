@@ -39,5 +39,7 @@ export default {
   .site_header_container {
     height: 79px;
     padding: 16px 30px;
+    max-width: 1160px;
+    margin: 0 auto;
   }
 </style>
