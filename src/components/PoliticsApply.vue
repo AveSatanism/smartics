@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="politics_apply_container mx-auto flex justify-center items-center">
+      <div class="PoliticsApply_container mx-auto flex justify-center items-center">
           <p>Продолжая использовать сайт smartics.ru вы соглашаетесь на использование файлов cookie.
             <br>Подробности на странице Политика конфиденциальности</p>
           <UIButton>ХОРОШО</UIButton>   
@@ -19,7 +19,7 @@
 </script>
 
 <style>
-.politics_apply_container {
+.PoliticsApply_container {
     height: 86px;
     font-size: 11px;
     color: white;
