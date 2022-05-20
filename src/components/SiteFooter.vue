@@ -2,7 +2,7 @@
   <section>
       <div class="footer_container flex justify-center">
         <div class="smartics_info">
-            <img class="smartics_logo2" src="../assets/smartics_logo2.svg" width="180" height="50" alt="Footer_logo">
+            <img class="smartics_logo2" src="../assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo">
             <p>Политика обработки персональных данных</p>
             <p>Политика конфиденциальности</p>
             <h3>Перемены начинаются с нами!</h3>
