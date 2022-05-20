@@ -23,4 +23,7 @@ export default {
 </script>
 
 <style>
+body {
+  font-family: 'MontserratVariable';
+}
 </style>
