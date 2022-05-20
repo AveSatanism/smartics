@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <footer>
       <div class="footer_container flex justify-center">
         <div class="smartics_info">
             <img class="smartics_logo2" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo">
@@ -39,7 +39,7 @@
             <img class="footer_contact" src="@/assets/qr-code.svg" width="73" height="73" alt="qr-code">
         </div>
       </div>
-  </section>  
+  </footer>  
 </template>
 
 <script>

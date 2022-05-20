@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <header>
       <div class="site_header_container mx-auto flex justify-between">
           <img class="smartics_logo" src="@/assets/logo/primary.svg" width="203" height="47" alt="Logo">
           <nav class="flex">
@@ -15,7 +15,7 @@
             <UIButton>В helpdesk</UIButton>
           </nav>
       </div>
-  </section>  
+  </header>  
 </template>
 
 <script>
@@ -23,7 +23,7 @@ import UIButton from './UI/UIButton.vue'
 
 export default {
   components: {
-      UIButton
+    UIButton
   }
 }
 </script>
