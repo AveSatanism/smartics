@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <footer>
       <div class="footer_container flex justify-center">
         <div class="smartics_info">
-            <img class="smartics_logo2" src="../assets/smartics_logo2.svg" width="180" height="50" alt="Footer_logo">
+            <img class="smartics_logo2" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo">
             <p>Политика обработки персональных данных</p>
             <p>Политика конфиденциальности</p>
             <h3>Перемены начинаются с нами!</h3>
@@ -32,14 +32,14 @@
             <p class="footer_contact">Email</p>
             <p class="footer_contact">Help@smartics.ru</p>
             <div class="footer_contact flex">
-              <img class="" src="../assets/Skype.svg" width="22.5" height="23.33" alt="skype_logo">
-              <img class="" src="../assets/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo">
-              <img class="" src="../assets/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo">
+              <img class="" src="@/assets/Skype.svg" width="22.5" height="23.33" alt="skype_logo">
+              <img class="" src="@/assets/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo">
+              <img class="" src="@/assets/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo">
             </div>
-            <img class="footer_contact" src="../assets/qr-code.svg" width="73" height="73" alt="qr-code">
+            <img class="footer_contact" src="@/assets/qr-code.svg" width="73" height="73" alt="qr-code">
         </div>
       </div>
-  </section>  
+  </footer>  
 </template>
 
 <script>
