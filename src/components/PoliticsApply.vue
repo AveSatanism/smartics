@@ -1,8 +1,8 @@
 <template>
   <section>
-      <div class="politics_apply_container mx-auto flex justify-center items-center">
+      <div class="PoliticsApply_container mx-auto flex justify-center items-center text_7">
           <p>Продолжая использовать сайт smartics.ru вы соглашаетесь на использование файлов cookie.
-            <br>Подробности на странице Политика конфиденциальности</p>
+            <br>Подробности на странице <a href="#" class="text_8">Политика конфиденциальности</a></p>
           <UIButton>ХОРОШО</UIButton>   
       </div>
   </section>  
@@ -19,12 +19,11 @@
 </script>
 
 <style>
-.politics_apply_container {
+.PoliticsApply_container {
     height: 86px;
-    font-size: 11px;
-    color: white;
+    color: #DDECFF;
+    text-align: center;
     background-color: #092C73;
     gap: 44px;
 }
-
 </style>

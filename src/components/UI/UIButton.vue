@@ -24,6 +24,11 @@ export default {
   border-radius: 10px;
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .button.button--default {
   background: #ff6b00;

@@ -2,13 +2,13 @@
   <section>
       <div class="site_navigation_container mx-auto flex justify-center items-center">
           <nav>
-            <ul class="navigation_links flex items-center">
-              <li class=""><p>цифровая<br>трансформация</p></li>
-              <li class=""><p>управление<br>инфраструктурой</p></li>
-              <li class=""><p>аудит IT</p></li>
-              <li class=""><p>IT - аутсорсинг<br>и техподдержка</p></li>
-              <li class=""><p>разработка по</p></li>
-              <li class=""><p>отраслевые<br>решения</p></li>
+            <ul class="flex gap-[66px] items-center text_8">
+              <li><p>цифровая<br>трансформация</p></li>
+              <li><p>управление<br>инфраструктурой</p></li>
+              <li><p>аудит IT</p></li>
+              <li><p>IT - аутсорсинг<br>и техподдержка</p></li>
+              <li><p>разработка по</p></li>
+              <li><p>отраслевые<br>решения</p></li>
             </ul>
           </nav>
       </div>
@@ -22,12 +22,8 @@
 <style>
   .site_navigation_container {
     height: 45px;
-    font-size: 11px;
     text-align: center;
+    color: white;
     background-color: #135EF2;
-  }
-
-  .navigation_links {
-      gap: 66px;
   }
 </style>
