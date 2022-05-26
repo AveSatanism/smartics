@@ -3,14 +3,14 @@
       <div class="site_header_container mx-auto flex justify-between">
           <img src="@/assets/logo/primary.svg" width="203" height="47" alt="Logo">
           <nav class="flex">
-            <img class="" src="@/assets/phone.svg" width="19" height="19" alt="phone_logo">
-            <ul class="w-[171px] ml-[15px] text_8 text-[#092C73]">
+            <img src="@/assets/phone.svg" width="19" height="19" alt="phone_logo">
+            <ul class="w-[171px] ml-[15px] text_8 site_color_1">
               <li class="flex justify-between"><p>С-ПБ</p>
-                <p class="text-[#FF6B00]">8-<span class="text-[#135EF2]">812</span>-424-43-74</p></li>
+                <p class="site_color_4">8-<span class="site_color_2">812</span>-424-43-74</p></li>
               <li class="flex justify-between"><p>Москва</p>
-                <p class="text-[#FF6B00]">8-<span class="text-[#135EF2]">495</span>-424-43-74</p></li>
+                <p class="site_color_4">8-<span class="site_color_2">495</span>-424-43-74</p></li>
               <li class="flex justify-between"><p>Астана</p>
-                <p class="text-[#FF6B00]">8-<span class="text-[#135EF2]">717</span>-424-43-74</p></li>
+                <p class="site_color_4">8-<span class="site_color_2">717</span>-424-43-74</p></li>
             </ul>
             <div class="flex gap-[12px] mx-[50px]">
               <img src="@/assets/Skype.svg" width="22.5" height="23.33" alt="skype_logo">

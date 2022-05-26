@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="site_navigation_container mx-auto flex justify-center items-center">
+      <div class="site_navigation_container mx-auto flex justify-center items-center text-center site_color_2_background">
           <nav>
             <ul class="flex gap-[66px] items-center text_8">
               <li><p>цифровая<br>трансформация</p></li>
@@ -22,8 +22,6 @@
 <style>
   .site_navigation_container {
     height: 45px;
-    text-align: center;
     color: white;
-    background-color: #135EF2;
   }
 </style>
