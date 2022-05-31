@@ -1,7 +1,7 @@
 <template>
   <header>
       <div class="site_header_container mx-auto flex justify-between">
-          <img src="@/assets/logo/primary.svg" width="203" height="47" alt="Logo">
+          <a href="/"><img src="@/assets/logo/primary.svg" width="203" height="47" alt="Logo"></a>
           <nav class="flex">
             <img src="@/assets/phone.svg" width="19" height="19" alt="phone_logo">
             <ul class="w-[171px] ml-[15px] text_8 site_color_1">
