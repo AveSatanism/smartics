@@ -2,7 +2,7 @@
   <div id="DigitalTransformation">
     <SiteHeader />
     <SiteNavigation />
-    <div class="digitalTrans_head  py-[7px]">
+    <div class="digitalTrans_background py-[7px]">
       <div class="pt-[55px] h-[703px] flex justify-center items-start">
         <img class="h-[429px] pt-[44px]" src="@/assets/DigitalTransforrmation_image1.png" width="572" height="429" alt="DigitalTransforrmation_image">
         <div class="ml-[55px] w-[510px] site_color_1 text-center flex justify-center flex-wrap">
@@ -57,7 +57,7 @@ export default {
 }
 </script>
 <style>
-.digitalTrans_head {
+.digitalTrans_background {
   background-image: url("@/assets/DigitalTransformation_wave.svg");
   background-size: 100%;
   background-repeat: no-repeat;

@@ -10,7 +10,7 @@
         <ul class="footer_list text_6 site_color_1">
             <li class="mb-[13px] text_7"><p>меню</p></li>
             <li class="mb-[13px]"><p><a href="DigitalTransformation">цифровая <br>трансформация</a></p></li>
-            <li class="mb-[13px]"><p><a href="#">управление <br>инфраструктурой</a></p></li>
+            <li class="mb-[13px]"><p><a href="InfrastructureManagement">управление <br>инфраструктурой</a></p></li>
             <li class="mb-[13px]"><p><a href="#">аудит ит</a></p></li>
             <li class="mb-[13px]"><p><a href="#">ит-аутсорсинг <br>и техподдержка</a></p></li>
             <li class="mb-[13px]"><p><a href="#">разработка по</a></p></li>
@@ -27,7 +27,6 @@
             <ul class="w-[167px] mb-[16px]">
                 <li class="flex justify-between normal-case"><p>С-Пб</p><p class="site_color_2">8(812)-424-43-74</p></li>
                 <li class="flex justify-between normal-case"><p>Москва</p><p class="site_color_2">8(495)-424-43-74</p></li>
-                <li class="flex justify-between normal-case"><p>Астана</p><p class="site_color_2">8(717)-424-43-74</p></li>
             </ul>
             <p class="mb-[7px] text_7">Email</p>
             <p class="mb-[16px]">Help@smartics.ru</p>

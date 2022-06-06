@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="flex justify-center flex-wrap mb-[59px]">
-      <h2 class="flex justify-center site_color_1 w-[100%] mb-[25px]">Нам уже доверяют</h2>
+      <a class="flex justify-center site_color_1 w-[100%] mb-[25px]" href="PartnersInfo"><h2>Нам уже доверяют</h2></a>
       <PartnersSlider />
     </div>
     <PoliticsApply />
