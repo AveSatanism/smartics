@@ -2,7 +2,7 @@
   <section>
       <div class="site_navigation_container mx-auto flex justify-center items-center text-center site_color_2_background">
           <nav>
-            <ul class="flex gap-[12px] items-center text_8">
+            <ul class="flex flex-wrap gap-[12px] items-center text_8">
               <a class="navigation_link" href="DigitalTransformation"><li><p>цифровая<br>трансформация</p></li></a>
               <a class="navigation_link" href="InfrastructureManagement"><li><p>управление<br>инфраструктурой</p></li></a>
               <a class="navigation_link" href="DigitalTransformation"><li><p>аудит IT</p></li></a>
@@ -21,7 +21,7 @@
 
 <style>
   .site_navigation_container {
-    height: 45px;
+    min-height: 45px;
     color: white;
   }
   .navigation_link {

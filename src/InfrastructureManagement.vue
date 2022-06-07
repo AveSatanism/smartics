@@ -47,7 +47,7 @@
           <UIButton class="flex justify-center w-[220px]">Связаться с нами</UIButton>
         </div>
       </div>
-      <div class="infrastructureManagement_background_bot h-[130px]"></div>
+      <div class="infrastructureManagement_background_bot h-[115px]"></div>
     </div>
     <PoliticsApply />
     <SiteFooter />
