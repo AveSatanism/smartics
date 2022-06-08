@@ -1,5 +1,8 @@
 <template>
-  <button class="button button--default">
+  <button class="button" :class="buttonVariantClass">
+    <div v-if="icon" class="mr-2 button-icon">
+      <slot name="icon"></slot>
+    </div>
     <slot></slot>
   </button>
 </template>
@@ -8,12 +11,26 @@
 export default {
   props: {
     outlined: {
+      type: Boolean,
       default: false,
     },
     disabled: {
+      type: Boolean,
       default: false,
     },
+    variant: {
+      type: String,
+      default: 'default',
+    },
   },
+  computed: {
+    icon() {
+      return Object.keys(this.$slots).includes('icon')
+    },
+    buttonVariantClass() {
+      return 'button--' + this.variant
+    }
+  }
 };
 </script>
 
@@ -32,6 +49,14 @@ export default {
 }
 .button.button--default {
   background: #ff6b00;
+  color: white;
+}
+.button.button--accent {
+  background: #135EF2;
+  color: white;
+}
+.button.button--accent:hover {
+  background: #092C73;
   color: white;
 }
 </style>
