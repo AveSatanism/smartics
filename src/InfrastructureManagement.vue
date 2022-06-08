@@ -3,8 +3,8 @@
     <SiteHeader />
     <SiteNavigation />
     <div>
-      <div class="infrastructureManagement_background py-[42px] flex justify-center items-center">
-        <div class="mb-[100px] site_color_1">
+      <div class="infrastructureManagement_background py-[42px] flex flex-wrap justify-center items-center">
+        <div class="site_color_1">
           <h1 class="mb-[26px]">управление<br> инфраструктурой</h1>
           <p class="mb-[26px] text_1">Перечислить наименования известных программ с<br> узкой направленностью, которые заменяет штука<br> Егора<br> а вообще она делает это еще лучше</p>
           <UIButton class="flex justify-center w-[180px]">Хочу!</UIButton>

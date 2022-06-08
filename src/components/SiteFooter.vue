@@ -12,7 +12,7 @@
             <li class="mb-[13px] text_7"><p>меню</p></li>
             <li class="mb-[13px]"><p><a href="DigitalTransformation">цифровая <br>трансформация</a></p></li>
             <li class="mb-[13px]"><p><a href="InfrastructureManagement">управление <br>инфраструктурой</a></p></li>
-            <li class="mb-[13px]"><p><a href="#">аудит ит</a></p></li>
+            <li class="mb-[13px]"><p><a href="AuditIT">аудит ит</a></p></li>
             <li class="mb-[13px]"><p><a href="#">ит-аутсорсинг <br>и техподдержка</a></p></li>
             <li class="mb-[13px]"><p><a href="#">разработка по</a></p></li>
             <li class="mb-[13px]"><p><a href="#">отраслевые решения</a></p></li>

@@ -2,6 +2,7 @@ const MainPage = () => import("@/MainPage.vue")
 const PartnersInfo = () => import("@/PartnersInfo.vue")
 const DigitalTransformation = () => import("@/DigitalTransformation.vue")
 const InfrastructureManagement = () => import("@/InfrastructureManagement.vue")
+const AuditIT = () => import("@/AuditIT.vue")
 const PageNotFound = () => import("@/PageNotFound.vue")
 
 const routes = [
@@ -27,6 +28,12 @@ const routes = [
       path: "/InfrastructureManagement",
       component: {
         render: (h) => h(InfrastructureManagement),
+      },
+    },
+    {
+      path: "/AuditIT",
+      component: {
+        render: (h) => h(AuditIT),
       },
     },
     {
