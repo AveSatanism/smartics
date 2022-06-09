@@ -38,12 +38,12 @@
 </template>
 
 <script>
-import SiteHeader from './components/SiteHeader.vue'
-import SiteNavigation from './components/SiteNavigation.vue'
-import PartnersSlider from './components/PartnersSlider.vue'
-import PoliticsApply from './components/PoliticsApply.vue'
-import SiteFooter from './components/SiteFooter.vue'
-import UIButton from './components/UI/UIButton.vue'
+import SiteHeader from '../components/SiteHeader.vue'
+import SiteNavigation from '../components/SiteNavigation.vue'
+import PartnersSlider from '../components/PartnersSlider.vue'
+import PoliticsApply from '../components/PoliticsApply.vue'
+import SiteFooter from '../components/SiteFooter.vue'
+import UIButton from '../components/UI/UIButton.vue'
 export default {
   components: {
     SiteHeader,

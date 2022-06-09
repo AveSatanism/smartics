@@ -1,9 +1,9 @@
-const MainPage = () => import("@/MainPage.vue")
-const PartnersInfo = () => import("@/PartnersInfo.vue")
-const DigitalTransformation = () => import("@/DigitalTransformation.vue")
-const InfrastructureManagement = () => import("@/InfrastructureManagement.vue")
-const AuditIT = () => import("@/AuditIT.vue")
-const PageNotFound = () => import("@/PageNotFound.vue")
+const MainPage = () => import("@/VuePage/MainPage.vue")
+const PartnersInfo = () => import("@/VuePage/PartnersInfo.vue")
+const DigitalTransformation = () => import("@/VuePage/DigitalTransformation.vue")
+const InfrastructureManagement = () => import("@/VuePage/InfrastructureManagement.vue")
+const AuditIT = () => import("@/VuePage/AuditIT.vue")
+const PageNotFound = () => import("@/VuePage/PageNotFound.vue")
 
 const routes = [
     {
