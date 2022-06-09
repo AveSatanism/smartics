@@ -12,7 +12,7 @@
         <UIButton>связаться с нами</UIButton>
         </div>  
       </div>
-      <img class="ml-[2%]" src="@/assets/main_page_image.png" width="516" height="626" alt="main_page_image">
+      <img class="ml-[2%]" src="@/assets/pageContentImage/MainPage_image.png" width="516" height="626" alt="main_page_image">
     </div>
     <div class="communication_section py-[16px] flex justify-center items-center site_color_3_background mb-[39px]">
       <div class="p-[58px]">

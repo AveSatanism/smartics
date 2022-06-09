@@ -9,7 +9,7 @@
           <p class="mb-[26px] text_1">Перечислить наименования известных программ с<br> узкой направленностью, которые заменяет штука<br> Егора<br> а вообще она делает это еще лучше</p>
           <UIButton class="flex justify-center w-[180px]">Хочу!</UIButton>
         </div>
-        <img class="h-[554px]" src="@/assets/InfrastructureManagement_image.png" width="597" height="554" alt="InfrastructureManagement_image">
+        <img class="h-[554px]" src="@/assets/pageContentImage/InfrastructureManagement_image.png" width="597" height="554" alt="InfrastructureManagement_image">
       </div>
       <div class="py-[20px] flex items-center flex-col site_color_1 site_color_2_background">
         <h2 class=" px-[99px] py-[19px] mb-[80px] infrastructureManagement_border site_color_3_background">Управление инфраструктурой</h2>
@@ -72,13 +72,13 @@ export default {
 </script>
 <style>
 .infrastructureManagement_background {
-  background-image: url("@/assets/InfrastructureManagement_wave.svg");
+  background-image: url("@/assets/pageContentImage/InfrastructureManagement_wave.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 .infrastructureManagement_background_bot {
-  background-image: url("@/assets/InfrastructureManagement_wave_bot.svg");
+  background-image: url("@/assets/pageContentImage/InfrastructureManagement_wave_bot.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

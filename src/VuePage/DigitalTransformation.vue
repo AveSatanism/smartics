@@ -4,7 +4,7 @@
     <SiteNavigation />
     <div class="digitalTrans_background py-[7px]">
       <div class="pt-[55px] h-[703px] flex justify-center items-start">
-        <img class="h-[429px] pt-[44px]" src="@/assets/DigitalTransforrmation_image1.png" width="572" height="429" alt="DigitalTransforrmation_image">
+        <img class="h-[429px] pt-[44px]" src="@/assets/pageContentImage/DigitalTransforrmation_image1.png" width="572" height="429" alt="DigitalTransforrmation_image">
         <div class="ml-[55px] w-[510px] site_color_1 text-center flex justify-center flex-wrap">
           <h1 class="mb-[7px]">пора заставить<br> технологии<br> работать на вас!</h1>
           <p class="mb-[28px] text_1">Пришло время освободить свой бизнес от<br> ламповых технологий.</p>
@@ -31,7 +31,7 @@
             <h3 class="mb-[34px]">Что вас ожидает:</h3>
             <p class="text_1">Повышение эффективности процессовосвобождение от лишних бизнес процессовснижение издержек за счёт отсутствия простоя оборудования освобождение от непрофильных IT задач</p>
           </div>
-          <img class="h-[688px] ml-[80px]" src="@/assets/DigitalTransforrmation_image2.png" width="545" height="688" alt="DigitalTransforrmation_image">
+          <img class="h-[688px] ml-[80px]" src="@/assets/pageContentImage/DigitalTransforrmation_image2.png" width="545" height="688" alt="DigitalTransforrmation_image">
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ export default {
 </script>
 <style>
 .digitalTrans_background {
-  background-image: url("@/assets/DigitalTransformation_wave.svg");
+  background-image: url("@/assets/pageContentImage/DigitalTransformation_wave.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

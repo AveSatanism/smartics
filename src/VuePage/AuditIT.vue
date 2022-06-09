@@ -16,7 +16,7 @@
             Хочу!
           </UIButton>
         </div>
-        <img class="h-[614px]" src="@/assets/AuditIT_image.png" width="406" height="614" alt="AuditIT_image">
+        <img class="h-[614px]" src="@/assets/pageContentImage/AuditIT_image.png" width="406" height="614" alt="AuditIT_image">
       </div>
       <section class="site_color_3 site_color_1_background">
         <h2 class="py-[36px] text-center">Мы - команда таких же айти специалистов, мы готовы оказать любую <br>
