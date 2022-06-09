@@ -15,7 +15,10 @@
               <img src="@/assets/icon/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo">
               <img src="@/assets/icon/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo">
             </div>
-            <UIButton>В helpdesk</UIButton>
+            <UIButton variant="profile">
+            <template #icon><img src="@/assets/icon/Profile.svg" width="22" height="22" alt="profile_icon"/></template>
+            В helpdesk
+            </UIButton>
           </nav>
       </div>
   </header>  

@@ -36,8 +36,6 @@ export default {
 
 <style>
 .button {
-  padding: 25px;
-  height: 40px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -51,11 +49,12 @@ export default {
   background: #ff6b00;
   color: white;
 }
-.button.button--accent {
+.button.button--profile {
+  padding: 5.5px 17px;
   background: #135EF2;
   color: white;
 }
-.button.button--accent:hover {
+.button.button--profile:hover {
   background: #092C73;
   color: white;
 }
