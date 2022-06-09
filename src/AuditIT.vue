@@ -11,7 +11,10 @@
           не нужно. <br>Часто простая задача решается дорого и не 
           <br>эффективно только из-за того, что сисадмин не <br>знает, как решить ее по-другому.</p>
           <p class="mb-[36px] text_3">SMARTICS - ваш лучший друг и помощник. <br>Мы готовы дополнить вашего админа и помочь ему.</p>
-          <UIButton class="flex justify-center w-[180px]">Хочу!</UIButton>
+          <UIButton variant="accent" class="flex justify-center w-[180px]">
+            <template #icon><i>ico</i></template>
+            Хочу!
+          </UIButton>
         </div>
         <img class="h-[614px]" src="@/assets/AuditIT_image.png" width="406" height="614" alt="AuditIT_image">
       </div>

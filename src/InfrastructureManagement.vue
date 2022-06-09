@@ -11,9 +11,9 @@
         </div>
         <img class="h-[554px]" src="@/assets/InfrastructureManagement_image.png" width="597" height="554" alt="InfrastructureManagement_image">
       </div>
-      <div class="py-[20px] flex justify-center flex-wrap site_color_1 site_color_2_background">
+      <div class="py-[20px] flex items-center flex-col site_color_1 site_color_2_background">
         <h2 class=" px-[99px] py-[19px] mb-[80px] infrastructureManagement_border site_color_3_background">Управление инфраструктурой</h2>
-        <div class="mb-[35px] text_8 flex justify-center gap-[25px] w-[100%]">
+        <div class="mb-[35px] text_8 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 justify-center gap-[25px]">
           <div class=" w-[137px] h-[180px] py-[13px] infrastructureManagement_border flex justify-center text-center flex-wrap">
             <p>Облачная инфраструктура</p>
             <img src="@/assets/InfrastructureManagement_image/cloudInfrastructure_icon.svg" width="93" height="90">
