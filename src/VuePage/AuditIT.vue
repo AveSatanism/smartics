@@ -2,7 +2,7 @@
   <div id="AuditIT">
     <SiteHeader />
     <SiteNavigation />
-    <div class="">
+    <div>
       <div class="py-[42px] flex flex-wrap gap-x-[130px] justify-center items-center">
         <div class="site_color_1">
           <h1 class="mb-[26px]">Один админ - <br>хорошо... <br>А целая команда <br>готова ему помочь!</h1>
@@ -11,7 +11,7 @@
           не нужно. <br>Часто простая задача решается дорого и не 
           <br>эффективно только из-за того, что сисадмин не <br>знает, как решить ее по-другому.</p>
           <p class="mb-[36px] text_3">SMARTICS - ваш лучший друг и помощник. <br>Мы готовы дополнить вашего админа и помочь ему.</p>
-          <UIButton class="flex justify-center w-[180px]">Хочу!</UIButton>
+          <UIButton variant="orange2">Хочу!</UIButton>
         </div>
         <img class="h-[614px]" src="@/assets/pageContentImage/AuditIT_image.png" width="406" height="614" alt="AuditIT_image">
       </div>

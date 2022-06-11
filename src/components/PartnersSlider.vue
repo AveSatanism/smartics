@@ -1,4 +1,5 @@
 <template>
+<section class="flex justify-center mb-[59px]">
   <Splide :options="{ rewind: false, type: 'loop', perMove: 5, perPage: 5, pagination: false, width: '1100px',}" aria-label="Partners Images">
     <SplideSlide class="splide_position">
       <img src="@/assets/PartnersLogo/itmo_icon.png" width="126" height="96" alt="itmo_icon_image">
@@ -46,6 +47,7 @@
       <img src="@/assets/PartnersLogo/Hotel365_icon.png" width="87" height="69" alt="Hotel365_icon_image">
     </SplideSlide>
   </Splide>
+</section>
 </template>
 
 <script>
@@ -62,15 +64,22 @@ export default {
 </script>
 <style>
 .splide_position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .splide__track {
-    margin: 0 50px;
+  margin: 0 50px;
+}
+.splide__arrow svg {
+  height: 17px;
+  filter: brightness(0) invert(1);
 }
 .splide__arrow {
-    color: #092C73;
-    background-color: white;
+  width: 27px;
+  height: 27px;
+  background-color: #135EF2;
+  opacity: 1;
 }
+
 </style>

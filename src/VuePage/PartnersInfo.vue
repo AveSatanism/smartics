@@ -2,8 +2,8 @@
   <div id="PartnersInfo">
       <SiteHeader />
       <SiteNavigation />
-      <div class="pt-[44px] pb-[110px] flex justify-center flex-wrap">
-        <h2 class="w-[100%] mb-[36px] flex justify-center site_color_1">Наши партнеры</h2>
+      <div class="pt-[44px] px-[30px] pb-[110px] flex flex-col items-center text-center">
+        <h2 class="mb-[36px] site_color_1">Наши партнеры</h2>
         <div class="max-w-[954px] flex justify-between items-center flex-wrap gap-[62px]">
           <img src="@/assets/PartnersLogo/itmo_icon.png" width="126" height="96" alt="itmo_icon_image">
           <img src="@/assets/PartnersLogo/magneton_icon.png" width="184" height="24" alt="magneton_icon_image">
