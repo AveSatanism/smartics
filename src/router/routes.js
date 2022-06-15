@@ -3,6 +3,7 @@ const PartnersInfo = () => import("@/VuePage/PartnersInfo.vue")
 const DigitalTransformation = () => import("@/VuePage/DigitalTransformation.vue")
 const InfrastructureManagement = () => import("@/VuePage/InfrastructureManagement.vue")
 const AuditIT = () => import("@/VuePage/AuditIT.vue")
+const VacanciesPage = () => import("@/VuePage/VacanciesPage.vue")
 const PageNotFound = () => import("@/VuePage/PageNotFound.vue")
 
 const routes = [
@@ -34,6 +35,12 @@ const routes = [
       path: "/AuditIT",
       component: {
         render: (h) => h(AuditIT),
+      },
+    },
+    {
+      path: "/Vacancies",
+      component: {
+        render: (h) => h(VacanciesPage),
       },
     },
     {

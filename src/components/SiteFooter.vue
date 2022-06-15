@@ -21,7 +21,7 @@
           <li class="text_7"><p>информация</p></li>
           <li><p><a href="#">для бизнеса</a></p></li>
           <li><p><a href="#">для партнёров</a></p></li>
-          <li><p><a href="#">для соискателей</a></p></li>
+          <li><p><a href="Vacancies">для соискателей</a></p></li>
         </ul>
         <div class="text_6 site_color_1">
           <p class="mb-[13px] text_7">контакты</p>
