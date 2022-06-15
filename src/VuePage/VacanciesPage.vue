@@ -5,8 +5,8 @@
     <div class="py-[59px] site_color_1 text_1 text-center">
       <h1 class="mb-[40px]">Наши вакансии</h1>
       <p class="mb-[44px]">Наши сотрудники - это члены большой семьи Smartics. Мы городимся каждым!<br> Присоединяйтесь к нашей команде!</p>
-      <div class="vacancies_scroll h-[620px] flex justify-center overflow-y-scroll">
-        <div class="flex flex-col gap-[40px]">
+      <div class="flex justify-center">
+        <div class="vacancies_scroll h-[620px] flex flex-col gap-[40px] overflow-y-scroll">
         <UIVacanciesCard>
           <template #vacancies_title><p>стажёр по информационной безопасности</p></template>
           <template #description><p>SMARTICS — крупная российская ИТ-компания с сильной экспертизой в области информационной безопасности. Наша команда активно растёт, и мы ищем начинающих специалистов, которые хотят развивать практику SOC/SIEM и расти в этом направлении.</p></template>
