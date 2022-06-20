@@ -23,7 +23,7 @@
       </div>
       <div class="communication_border">
         <h3>Как стать частью<br> команды?</h3>
-        <UIButton variant="white">Вакансии</UIButton>
+        <form action="Vacancies"><UIButton variant="white" href="Vacancies">Вакансии</UIButton></form>
       </div>
     </div>
     <a class="mb-[25px]" href="PartnersInfo"><h2>Нам уже доверяют</h2></a>
@@ -74,6 +74,6 @@ export default {
   margin-bottom: 16px;
 }
 .communication_border {
-  border-left: 2px solid white;
+  border-left: 2px solid var(--color-7);
 }
 </style>

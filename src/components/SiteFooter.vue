@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full site_color_5_background text-left">
+  <footer class="w-full site_color_6_background text-left">
     <div class="footer_container flex flex-wrap justify-between mx-auto">
       <div>
         <a href="/"><img class="mb-[32px]" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo"/></a>

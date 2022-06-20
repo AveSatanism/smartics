@@ -78,7 +78,7 @@ export default {
 .splide__arrow {
   width: 27px;
   height: 27px;
-  background-color: #135EF2;
+  background-color: var(--color-2);
   opacity: 1;
 }
 

@@ -18,9 +18,10 @@
 .vacancies_card {
   max-width: 793px;
   padding: 36px 32px;
-  border: 1px solid #DDECFF;
-  filter: drop-shadow(0px 4px 4px rgba(0, 99, 210, 0.3));
+  border: 1px solid var(--color-3);
+  filter: drop-shadow(0px 4px 4px var(--color-1-background));
   border-radius: 15px;
+  background-color: var(--color-7);
 }
 .vacancies_atribute div {
     display: flex;

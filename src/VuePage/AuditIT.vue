@@ -59,8 +59,8 @@ export default {
     column-gap: 8px;
     padding: 27px 56px;
     margin-bottom: 20px;
-    border: 2px solid #DDECFF;
-    filter: drop-shadow(0px 4px 8px rgba(0, 99, 210, 0.3));
+    border: 2px solid var(--color-3);
+    filter: drop-shadow(0px 4px 8px var(--color-1-background));
     border-radius: 15px;
 }
 </style>

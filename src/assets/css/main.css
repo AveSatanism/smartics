@@ -1,33 +1,43 @@
 body {
   font-family: 'MontserratVariable';
 }
+:root {
+  --color-1: #092C73;
+  --color-1-background: rgba(0, 99, 210, 0.3);
+  --color-2: #135EF2;
+  --color-3: #DDECFF;
+  --color-4: #FF6B00;
+  --color-5: #C4C4C4;
+  --color-6: #F2F2F2;
+  --color-7: #FFFFFF;
+}
 .site_color_1 {
-  color: #092C73;
+  color: var(--color-1);
 }
 .site_color_1_background {
-  background-color: #092C73;
+  background-color: var(--color-1);
 }
   
 .site_color_2 {
-  color: #135EF2;
+  color: var(--color-2);
 }
 .site_color_2_background {
-  background-color: #135EF2;
+  background-color: var(--color-2);
 }
  
 .site_color_3 {
-  color: #DDECFF;
+  color: var(--color-3);
 }
 .site_color_3_background {
-  background-color: #DDECFF;
+  background-color: var(--color-3);
 }
   
 .site_color_4 {
-  color: #FF6B00;
+  color: var(--color-4);
 }
   
-.site_color_5_background {
-  background-color: #F2F2F2;
+.site_color_6_background {
+  background-color: var(--color-6);
 }
   
   
@@ -107,5 +117,13 @@ h3 {
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.text_button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }

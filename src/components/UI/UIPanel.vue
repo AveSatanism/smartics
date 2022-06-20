@@ -26,9 +26,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 99, 210, 0.3);
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--color-7);
 }
 .panel img {
   height: 90px;

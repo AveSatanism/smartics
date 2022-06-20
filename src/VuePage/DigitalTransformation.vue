@@ -62,9 +62,9 @@ export default {
 }
 .digitalTrans_main_title {
   padding: 20px 150px;
-  border: 2px solid #FFFFFF;
-  box-shadow: 0px 4px 8px rgba(0, 99, 210, 0.3);
+  border: 2px solid var(--color-7);
+  box-shadow: 0px 4px 8px var(--color-1-background);
   border-radius: 15px;
-  background-color: #FFFFFF;
+  background-color: var(--color-7);
 }
 </style>

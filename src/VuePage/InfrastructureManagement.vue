@@ -76,8 +76,8 @@ export default {
   background-repeat: no-repeat;
 }
 .infrastructureManagement_border {
-    box-shadow: 0px 4px 8px rgba(0, 99, 210, 0.3);
+    box-shadow: 0px 4px 8px var(--color-1-background);
     border-radius: 15px;
-    color: white;
+    color: var(--color-7);
 }
 </style>

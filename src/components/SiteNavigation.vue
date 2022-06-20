@@ -17,7 +17,7 @@
 <style>
   .site_navigation_container {
     min-height: 45px;
-    color: white;
+    color: var(--color-7);
   }
   .navigation_links a {
     height: 45px;
@@ -26,7 +26,7 @@
     padding: 0 28.5px;
   }
   .navigation_links a:hover {
-    background: #092C73;
+    background: var(--color-1);
     border-radius: 10px;
   }
 </style>
