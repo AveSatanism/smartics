@@ -6,6 +6,8 @@ const AuditIT = () => import("@/VuePage/AuditIT.vue")
 const VacanciesPage = () => import("@/VuePage/VacanciesPage.vue")
 const VacanciPage1 = () => import("@/VuePage/VacanciNumber/VacanciPage1.vue")
 const PageNotFound = () => import("@/VuePage/PageNotFound.vue")
+const DataProcessing = () => import("@/VuePage/DataProcessing.vue")
+const PrivacyPolicy = () => import("@/VuePage/PrivacyPolicy.vue")
 
 const routes = [
     {
@@ -48,6 +50,18 @@ const routes = [
       path: "/Vacanci1",
       component: {
         render: (h) => h(VacanciPage1),
+      },
+    },
+    {
+      path: "/DataProcessing",
+      component: {
+        render: (h) => h(DataProcessing),
+      },
+    },
+    {
+      path: "/PrivacyPolicy",
+      component: {
+        render: (h) => h(PrivacyPolicy),
       },
     },
     {

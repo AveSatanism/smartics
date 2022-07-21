@@ -22,21 +22,18 @@
           <img src="@/assets/PartnersLogo/Hotel365_icon.png" width="87" height="69" alt="Hotel365_icon_image">
         </div>
       </div>
-      <PoliticsApply />
       <SiteFooter />
   </div>
 </template>
 <script>
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
-import PoliticsApply from '../components/PoliticsApply.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 
 export default {
   components: {
     SiteHeader,
     SiteNavigation,
-    PoliticsApply,
     SiteFooter
     }
 }

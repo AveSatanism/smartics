@@ -4,10 +4,13 @@
     <SiteNavigation />
     <div class="flex justify-center px-[30px]">
       <div class="py-[61px] max-w-[1160px] flex flex-col items-center">
-        <div class="mb-[73px] self-start flex items-center site_color_4">
-          <a href="Vacancies"><img src="@/assets/icon/BackArrow_icon.svg" width="28.83" height="15" alt="backArrow_icon"></a>
-          <h2 class="ml-[16px]">стажёр по информационной безопасности</h2>
+        <div class="mb-[73px] w-full self-start flex justify-between items-center site_color_4">
+          <div class="flex items-center">
+            <a href="Vacancies"><img src="@/assets/icon/BackArrow_icon.svg" width="28.83" height="15" alt="backArrow_icon"></a>
+            <h2 class="ml-[16px]">стажёр по информационной безопасности</h2>
           </div>
+          <UIButton variant="orange1">связаться с нами</UIButton> 
+        </div>
         <div class="mb-[26px] text_button site_color_2 flex flex-wrap gap-[66.67px]">
           <div class="flex items-center gap-[11px]">
             <img src="@/assets/icon/Education_card_icon.svg" width="19" height="19" alt="education_icon">
@@ -69,21 +72,20 @@
         </div>
       </div>
     </div>
-    <PoliticsApply />
     <SiteFooter />
   </div>
 </template>
 <script>
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteNavigation from '@/components/SiteNavigation.vue'
-import PoliticsApply from '@/components/PoliticsApply.vue'
+import UIButton from '@/components/UI/UIButton.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 
 export default {
   components: {
     SiteHeader,
     SiteNavigation,
-    PoliticsApply,
+    UIButton,
     SiteFooter
     }
 }

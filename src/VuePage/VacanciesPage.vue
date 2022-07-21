@@ -46,7 +46,6 @@
         <img class="vacancies_image h-[616px]" src="@/assets/pageContentImage/VacanciesPage_image.svg" width="344" height="616" alt="vacancies_image">
       </div>
     </div>
-    <PoliticsApply />
     <SiteFooter />
   </div>
 </template>
@@ -54,7 +53,6 @@
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
 import UIVacanciesCard from '../components/UI/UIVacanciesCard.vue'
-import PoliticsApply from '../components/PoliticsApply.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 
 export default {
@@ -62,7 +60,6 @@ export default {
     SiteHeader,
     SiteNavigation,
     UIVacanciesCard,
-    PoliticsApply,
     SiteFooter
     }
 }
@@ -70,7 +67,7 @@ export default {
 <style>
 .vacancies_image {
   position: absolute;
-  margin-left: 344px;
+  margin-left: 374px;
 }
 .vacancies_scroll::-webkit-scrollbar { width: 0 !important }
 </style>

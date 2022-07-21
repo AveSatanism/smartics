@@ -5,7 +5,7 @@
     <div class="digitalTrans_background py-[7px] text_1">
       <div class="pt-[55px] min-h-[703px] flex justify-center items-start">
         <img class="h-[429px] pt-[44px]" src="@/assets/pageContentImage/DigitalTransforrmation_image1.png" width="572" height="429" alt="DigitalTransforrmation_image">
-        <div class="ml-[10px] max-w-[603px] site_color_1 text-center flex flex-col items-center">
+        <div class="ml-[10px] mb-[30px] max-w-[603px] site_color_1 text-center flex flex-col items-center">
           <h1 class="mb-[7px]">пора заставить технологии работать на вас!</h1>
           <p class="mb-[28px]">Пришло время освободить свой бизнес от<br> ламповых технологий.</p>
           <h3 class="mb-[22px]">Что вас ожидает:</h3>
@@ -33,14 +33,12 @@
         </div>
       </div>
     </div>
-    <PoliticsApply />
     <SiteFooter />
   </div>
 </template>
 <script>
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
-import PoliticsApply from '../components/PoliticsApply.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import UIButton from '../components/UI/UIButton.vue'
 
@@ -49,7 +47,6 @@ export default {
     SiteHeader,
     SiteNavigation,
     UIButton,
-    PoliticsApply,
     SiteFooter
     }
 }
@@ -61,7 +58,8 @@ export default {
   background-repeat: no-repeat;
 }
 .digitalTrans_main_title {
-  padding: 20px 150px;
+  padding: 20px;
+  width: 1040px;
   border: 2px solid var(--color-7);
   box-shadow: 0px 4px 8px var(--color-1-background);
   border-radius: 15px;

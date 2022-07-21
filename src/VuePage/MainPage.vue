@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center site_color_1">
+  <div class="text-center site_color_1 mb-[86px]">
     <SiteHeader />
     <SiteNavigation />
     <div class="min-h-[642px] flex_content">
@@ -12,7 +12,7 @@
       </div>
       <img class="ml-[27px]" src="@/assets/pageContentImage/MainPage_image.png" width="516" height="626" alt="main_page_image">
     </div>
-    <div class="communication_section flex_content py-[16px] site_color_3_background mb-[39px]">
+    <div class="communication_section flex_content py-[16px] site_color_3_background mb-[48px]">
       <div>
         <h3>Как мы можем помочь<br> вашему бизнесу?</h3> 
         <UIButton variant="white">узнать варианты</UIButton>
@@ -26,7 +26,7 @@
         <form action="Vacancies"><UIButton variant="white" href="Vacancies">Вакансии</UIButton></form>
       </div>
     </div>
-    <a class="mb-[25px]" href="PartnersInfo"><h2>Нам уже доверяют</h2></a>
+    <a href="PartnersInfo"><h2 class="mb-[25px]">Нам уже доверяют</h2></a>
     <PartnersSlider />
     <PoliticsApply />
     <SiteFooter />

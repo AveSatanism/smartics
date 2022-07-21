@@ -5,7 +5,7 @@
       <div>
         <img src="@/assets/icon/phone.svg" width="19" height="19" alt="phone_logo">
         <ul class="site_header_numbers w-[171px] ml-[15px] text_8 site_color_1">
-          <li><p>С-ПБ</p><a href="tel:8(812)-424-43-74" class="site_color_4">8-<span class="site_color_1">812</span>-424-43-74</a></li>
+          <li><p>С-ПБ</p><a href="tel:8(812)-424-43-74" class="site_color_4 pr-[3px]">8-<span class="site_color_1">812</span>-424-43-74</a></li>
           <li><p>Москва</p><a href="tel:8(495)-424-43-74" class="site_color_4">8-<span class="site_color_1">495</span>-424-43-74</a></li>
         </ul>
       </div>
