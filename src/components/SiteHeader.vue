@@ -1,5 +1,6 @@
 <template>
-  <header class="site_header_container mx-auto flex justify-between flex-wrap gap-y-[20px]">
+  <header class="site_color_7_background">
+    <div class="site_header_container mx-auto flex justify-between flex-wrap gap-y-[20px]">
     <a href="/"><img src="@/assets/logo/primary.svg" width="203" height="47" alt="Logo"></a>
     <div class="site_header_content w-[568px] flex flex-wrap justify-between items-center gap-y-[20px]">
       <div>
@@ -19,6 +20,7 @@
       В helpdesk
       </UIButton>
     </div>
+    </div>
   </header>  
 </template>
 
@@ -33,6 +35,11 @@ export default {
 </script>
 
 <style>
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
   .site_header_container {
     min-height: 79px;
     padding: 16px 30px;
