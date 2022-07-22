@@ -29,7 +29,6 @@
             <li class="flex justify-between normal-case"><p>С-Пб</p><a href="tel:8(812)-424-43-74" class="site_color_2">8(812)-424-43-74</a></li>
             <li class="flex justify-between normal-case"><p>Москва</p><a href="tel:8(495)-424-43-74" class="site_color_2">8(495)-424-43-74</a></li>
           </ul>
-          <p class="mb-[7px] text_7">Email</p>
           <a href="mailto:Help@smartics.ru">Help@smartics.ru</a>
           <div class="my-[16px] flex gap-[12px]">
             <img src="@/assets/icon/Skype.svg" width="22.5" height="23.33" alt="skype_logo"/>

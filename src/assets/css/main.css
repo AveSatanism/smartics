@@ -39,6 +39,10 @@ body {
 .site_color_6_background {
   background-color: var(--color-6);
 }
+
+.site_color_7_background {
+  background-color: var(--color-7);
+}
   
   
 h1 {
