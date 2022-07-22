@@ -5,7 +5,7 @@
         <a href="/"><img class="mb-[32px]" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo"/></a>
         <p class="mb-[13px] text_6 site_color_1"><a href="DataProcessing">Политика обработки <br />персональных данных</a></p>
         <p class="mb-[13px] text_6 site_color_1"><a href="PrivacyPolicy">Политика конфиденциальности</a></p>
-        <h3 class="mt-[32px] site_color_4">Перемены<br /> начинаются<br /> с нами!</h3>
+        <h3 class="text-h3 mt-[32px] site_color_4">Перемены<br /> начинаются<br /> с нами!</h3>
       </div>
       <div class="flex flex-wrap gap-x-[100px] py-[8px]">
         <ul class="footer_list text_6 site_color_1">

@@ -3,7 +3,7 @@
     <SiteHeader />
     <SiteNavigation />
     <div class="py-[66px] flex flex-col items-center site_color_1 text-left text_1">
-    <h2 class="mb-[39px] text-center">Соглашение на обработку персональных данных</h2>
+    <h2 class="text-h2 mb-[39px] text-center">Соглашение на обработку персональных данных</h2>
     <div class="w-[794px] flex flex-col gap-y-[39px]">
         <p>Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте smartics.ru, (далее — Сайт), путем заполнения полей онлайн-заявки (оформления заказа) Пользователь:</p>
         <ul class="list_data_process">

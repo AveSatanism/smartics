@@ -4,7 +4,7 @@
     <SiteNavigation />
     <div class="min-h-[642px] flex_content">
       <div class="main_title text_1">
-        <h1>мы точно знаем, <br>что нужно вашему <br>бизнесу</h1>
+        <h1 class="text-h1">мы точно знаем, <br>что нужно вашему <br>бизнесу</h1>
         <p>Мы - SMARTICS FAMILY - разработчики, поставщики,<br>
            интеграторы, помощники в решении ваших IT проблем.<br>
             Мы решаем задачу, улучшая бизнес процесс, а не <br>оборудование.</p>
@@ -14,19 +14,19 @@
     </div>
     <div class="communication_section flex_content py-[16px] site_color_3_background mb-[48px]">
       <div>
-        <h3>Как мы можем помочь<br> вашему бизнесу?</h3> 
+        <h3 class="text-h3">Как мы можем помочь<br> вашему бизнесу?</h3> 
         <UIButton variant="white">узнать варианты</UIButton>
       </div>
       <div class="communication_border">
-        <h3>Как стать<br> нашими партнёрами?</h3> 
+        <h3 class="text-h3">Как стать<br> нашими партнёрами?</h3> 
         <UIButton variant="white">свяжитесь с нами</UIButton>
       </div>
       <div class="communication_border">
-        <h3>Как стать частью<br> команды?</h3>
+        <h3 class="text-h3">Как стать частью<br> команды?</h3>
         <form action="Vacancies"><UIButton variant="white" href="Vacancies">Вакансии</UIButton></form>
       </div>
     </div>
-    <a href="PartnersInfo"><h2 class="mb-[25px]">Нам уже доверяют</h2></a>
+    <a href="PartnersInfo"><h2 class="text-h2 mb-[25px]">Нам уже доверяют</h2></a>
     <PartnersSlider />
     <PoliticsApply />
     <SiteFooter />

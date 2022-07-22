@@ -3,7 +3,7 @@
     <SiteHeader />
     <SiteNavigation />
     <div class="py-[59px] site_color_1 text_1 text-center">
-      <h1 class="mb-[40px]">Наши вакансии</h1>
+      <h1 class="text-h1 mb-[40px]">Наши вакансии</h1>
       <p class="mb-[44px]">Наши сотрудники - это члены большой семьи Smartics. Мы городимся каждым!<br> Присоединяйтесь к нашей команде!</p>
       <div class="flex justify-center">
         <perfect-scrollbar class="h-[620px]">

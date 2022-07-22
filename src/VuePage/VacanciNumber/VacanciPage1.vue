@@ -7,7 +7,7 @@
         <div class="mb-[73px] w-full self-start flex justify-between items-center site_color_4">
           <div class="flex items-center">
             <a href="Vacancies"><img src="@/assets/icon/BackArrow_icon.svg" width="28.83" height="15" alt="backArrow_icon"></a>
-            <h2 class="ml-[16px]">стажёр по информационной безопасности</h2>
+            <h2 class="text-h2 ml-[16px]">стажёр по информационной безопасности</h2>
           </div>
           <UIButton variant="orange1">связаться с нами</UIButton> 
         </div>
