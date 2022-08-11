@@ -13,9 +13,9 @@
           <li><p><a href="DigitalTransformation">цифровая <br />трансформация</a></p></li>
           <li><p><a href="InfrastructureManagement">управление <br />инфраструктурой</a></p></li>
           <li><p><a href="AuditIT">аудит ит</a></p></li>
-          <li><p><a href="#">ит-аутсорсинг <br />и техподдержка</a></p></li>
-          <li><p><a href="#">разработка по</a></p></li>
-          <li><p><a href="#">отраслевые решения</a></p></li>
+          <li><p><a href="IT-outsourcing">ит-аутсорсинг <br />и техподдержка</a></p></li>
+          <li><p><a href="SoftwareDevelopment">разработка по</a></p></li>
+          <li><p><a href="IndustrySolutions">отраслевые решения</a></p></li>
         </ul>
         <ul class="footer_list text_6 site_color_1">
           <li class="text_7"><p>информация</p></li>

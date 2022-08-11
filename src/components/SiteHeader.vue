@@ -38,7 +38,7 @@ export default {
   header {
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
   }
   .site_header_container {
     min-height: 79px;

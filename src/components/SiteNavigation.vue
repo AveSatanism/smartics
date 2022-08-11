@@ -4,9 +4,9 @@
       <router-link to="DigitalTransformation"><li><p>цифровая<br>трансформация</p></li></router-link>
       <router-link to="InfrastructureManagement"><li><p>управление<br>инфраструктурой</p></li></router-link>
       <router-link to="AuditIT"><li><p>аудит IT<br>и консалтинг</p></li></router-link>
-      <router-link to="404"><li><p>IT - аутсорсинг<br>и техподдержка</p></li></router-link>
-      <router-link to="405"><li><p>разработка по</p></li></router-link>
-      <router-link to="406"><li><p>отраслевые<br>решения</p></li></router-link>
+      <router-link to="IT-outsourcing"><li><p>IT - аутсорсинг<br>и техподдержка</p></li></router-link>
+      <router-link to="SoftwareDevelopment"><li><p>разработка по</p></li></router-link>
+      <router-link to="IndustrySolutions"><li><p>отраслевые<br>решения</p></li></router-link>
     </ul>
   </nav>
 </template>
@@ -18,7 +18,7 @@
   .site_navigation_container {
     position: sticky;
     top: 79px;
-    z-index: 1;
+    z-index: 2;
     min-height: 45px;
     color: var(--color-7);
   }

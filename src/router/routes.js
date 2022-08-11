@@ -8,6 +8,10 @@ const VacanciPage1 = () => import("@/VuePage/VacanciNumber/VacanciPage1.vue")
 const PageNotFound = () => import("@/VuePage/PageNotFound.vue")
 const DataProcessing = () => import("@/VuePage/DataProcessing.vue")
 const PrivacyPolicy = () => import("@/VuePage/PrivacyPolicy.vue")
+const OutsourcingIT = () => import("@/VuePage/OutsourcingIT.vue")
+const SoftwareDevelopment = () => import("@/VuePage/SoftwareDevelopment.vue")
+const IndustrySolutions = () => import("@/VuePage/IndustrySolutions.vue")
+
 
 const routes = [
     {
@@ -62,6 +66,24 @@ const routes = [
       path: "/PrivacyPolicy",
       component: {
         render: (h) => h(PrivacyPolicy),
+      },
+    },
+    {
+      path: "/IT-outsourcing",
+      component: {
+        render: (h) => h(OutsourcingIT),
+      },
+    },
+    {
+      path: "/SoftwareDevelopment",
+      component: {
+        render: (h) => h(SoftwareDevelopment),
+      },
+    },
+    {
+      path: "/IndustrySolutions",
+      component: {
+        render: (h) => h(IndustrySolutions),
       },
     },
     {

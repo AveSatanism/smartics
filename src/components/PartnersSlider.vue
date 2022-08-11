@@ -80,6 +80,7 @@ export default {
   height: 27px;
   background-color: var(--color-2);
   opacity: 1;
+  z-index: 0;
 }
 .splide__arrow:hover {
   opacity: 0.6;

@@ -1,6 +1,6 @@
 <template>
   <button class="button text_button" :class="buttonVariantClass">
-    <div v-if="icon" class="mr-2 button-icon">
+    <div v-if="icon" class="mr-2">
       <slot name="icon"></slot>
     </div>
     <slot></slot>
@@ -77,5 +77,26 @@ export default {
 }
 .button.button--profile:active {
   background: var(--color-1);
+}
+.button.button--submit {
+  font-size: 11px !important;
+  letter-spacing: 0.05em !important;
+  width: 127px;
+  height: 24px;
+  border-radius: 5px !important;
+  background: var(--color-1);
+  color: var(--color-7);
+}
+.button.button--submit:active {
+  background: var(--color-4);
+}
+.button.button--letsGo {
+  width: 150px;
+  height: 31px;
+  background: var(--color-1);
+  color: var(--color-7);
+}
+.button.button--letsGo:active {
+  background: var(--color-4);
 }
 </style>
