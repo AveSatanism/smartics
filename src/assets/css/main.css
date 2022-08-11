@@ -35,11 +35,21 @@ body {
 .site_color_4 {
   color: var(--color-4);
 }
-  
+
+.site_color_5 {
+  color: var(--color-5);
+}
+
+.site_color_6 {
+  color: var(--color-6);
+}
 .site_color_6_background {
   background-color: var(--color-6);
 }
 
+.site_color_7 {
+  color: var(--color-7);
+}
 .site_color_7_background {
   background-color: var(--color-7);
 }
@@ -122,6 +132,18 @@ h3, .text-h3 {
   line-height: 1.4;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.text_9 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+.text_10 {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
 }
 
 .text_button {
