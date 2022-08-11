@@ -31,6 +31,7 @@
         </ul>
         </div>
       </div>
+      <ContantForm class="pb-[112px]"/>
     </div>
     <SiteFooter />
   </div>
@@ -39,6 +40,7 @@
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
 import SiteFooter from '../components/SiteFooter.vue'
+import ContantForm from '../components/ContactForm.vue'
 import UIButton from '../components/UI/UIButton.vue'
 
 export default {
@@ -46,6 +48,7 @@ export default {
     SiteHeader,
     SiteNavigation,
     UIButton,
+    ContantForm,
     SiteFooter
     }
 }

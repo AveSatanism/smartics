@@ -3,7 +3,7 @@
     <SiteHeader />
     <SiteNavigation />
     <div class="flex justify-center px-[30px]">
-      <div class="py-[61px] max-w-[1160px] flex flex-col items-center">
+      <div class="py-[62px] max-w-[1160px] flex flex-col items-center">
         <div class="mb-[73px] w-full self-start flex justify-between items-center site_color_4">
           <div class="flex items-center">
             <a href="Vacancies"><img src="@/assets/icon/BackArrow_icon.svg" width="28.83" height="15" alt="backArrow_icon"></a>
@@ -29,7 +29,7 @@
             <p>Полная занятость</p>
           </div>
         </div>
-        <div class="vacanci_border bg-white flex flex-col gap-y-[30px] p-[40px]">
+        <div class="mb-[62px] vacanci_border bg-white flex flex-col gap-y-[30px] p-[40px]">
           <div class="text_1 site_color_1">
             <p class="mb-[10px] text_4 site_color_2">Описание вакансии</p>
             <p>SMARTICS  — крупная российская ИТ-компания с сильной экспертизой в области информационной безопасности. Наша команда активно растёт, и мы ищем начинающих специалистов, которые хотят развивать практику SOC/SIEM и расти в этом направлении.
@@ -70,6 +70,8 @@
             </ul>
           </div>
         </div>
+        <ContantForm />
+        <CommunicationForm />
       </div>
     </div>
     <SiteFooter />
@@ -78,6 +80,8 @@
 <script>
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteNavigation from '@/components/SiteNavigation.vue'
+import ContantForm from '@/components/ContactForm.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
 import UIButton from '@/components/UI/UIButton.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 
@@ -85,6 +89,8 @@ export default {
   components: {
     SiteHeader,
     SiteNavigation,
+    ContantForm,
+    CommunicationForm,
     UIButton,
     SiteFooter
     }
