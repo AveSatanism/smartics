@@ -24,7 +24,7 @@
         <form action="Vacancies"><UIButton variant="white" href="Vacancies">Вакансии</UIButton></form>
       </div>
     </div>
-    <a href="PartnersInfo"><h2 class="text-h2 mb-[25px]">Нам уже доверяют</h2></a>
+    <router-link to="PartnersInfo"><h2 class="text-h2 mb-[25px]">Нам уже доверяют</h2></router-link>
     <PartnersSlider />
     <PoliticsApply />
   </div>

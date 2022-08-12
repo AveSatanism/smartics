@@ -2,26 +2,26 @@
   <footer class="w-full site_color_6_background text-left">
     <div class="footer_container flex flex-wrap justify-between mx-auto">
       <div>
-        <a href="/"><img class="mb-[32px]" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo"/></a>
-        <p class="mb-[13px] text_6 site_color_1"><a href="DataProcessing">Политика обработки <br />персональных данных</a></p>
-        <p class="mb-[13px] text_6 site_color_1"><a href="PrivacyPolicy">Политика конфиденциальности</a></p>
+        <router-link to="/"><img class="mb-[32px]" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo"/></router-link>
+        <p class="mb-[13px] text_6 site_color_1"><router-link to="DataProcessing">Политика обработки <br />персональных данных</router-link></p>
+        <p class="mb-[13px] text_6 site_color_1"><router-link to="PrivacyPolicy">Политика конфиденциальности</router-link></p>
         <h3 class="text-h3 mt-[32px] site_color_4">Перемены<br /> начинаются<br /> с нами!</h3>
       </div>
       <div class="flex flex-wrap gap-x-[100px] py-[8px]">
         <ul class="footer_list text_6 site_color_1">
           <li class="text_7"><p>меню</p></li>
-          <li><p><a href="DigitalTransformation">цифровая <br />трансформация</a></p></li>
-          <li><p><a href="InfrastructureManagement">управление <br />инфраструктурой</a></p></li>
-          <li><p><a href="AuditIT">аудит ит</a></p></li>
-          <li><p><a href="IT-outsourcing">ит-аутсорсинг <br />и техподдержка</a></p></li>
-          <li><p><a href="SoftwareDevelopment">разработка по</a></p></li>
-          <li><p><a href="IndustrySolutions">отраслевые решения</a></p></li>
+          <li><p><router-link to="DigitalTransformation">цифровая <br />трансформация</router-link></p></li>
+          <li><p><router-link to="InfrastructureManagement">управление <br />инфраструктурой</router-link></p></li>
+          <li><p><router-link to="AuditIT">аудит ит</router-link></p></li>
+          <li><p><router-link to="IT-outsourcing">ит-аутсорсинг <br />и техподдержка</router-link></p></li>
+          <li><p><router-link to="SoftwareDevelopment">разработка по</router-link></p></li>
+          <li><p><router-link to="IndustrySolutions">отраслевые решения</router-link></p></li>
         </ul>
         <ul class="footer_list text_6 site_color_1">
           <li class="text_7"><p>информация</p></li>
-          <li><p><a href="#">для бизнеса</a></p></li>
-          <li><p><a href="#">для партнёров</a></p></li>
-          <li><p><a href="Vacancies">для соискателей</a></p></li>
+          <li><p><router-link to="#">для бизнеса</router-link></p></li>
+          <li><p><router-link to="#">для партнёров</router-link></p></li>
+          <li><p><router-link to="Vacancies">для соискателей</router-link></p></li>
         </ul>
         <div class="text_6 site_color_1">
           <p class="mb-[13px] text_7">контакты</p>

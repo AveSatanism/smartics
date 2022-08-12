@@ -6,13 +6,13 @@
       <div class="flex justify-center">
         <perfect-scrollbar class="h-[620px]">
         <div class="pr-[8px] pl-[44px] vacancies_scroll h-[620px] flex flex-col gap-[40px]">
-        <a href="Vacanci1"><UIVacanciesCard>
+        <router-link to="Vacanci1"><UIVacanciesCard>
           <template #vacancies_title><p>стажёр по информационной безопасности</p></template>
           <template #description><p>SMARTICS — крупная российская ИТ-компания с сильной экспертизой в области информационной безопасности. Наша команда активно растёт, и мы ищем начинающих специалистов, которые хотят развивать практику SOC/SIEM и расти в этом направлении.</p></template>
           <template #experience><p>опыт 0-1 лет</p></template>
           <template #location><p>Санкт-петербург</p></template>
           <template #employment><p>Полная занятость</p></template>
-        </UIVacanciesCard></a>
+        </UIVacanciesCard></router-link>
         <UIVacanciesCard>
           <template #vacancies_title><p>специалист Ip телефонии</p></template>
           <template #description><p>SMARTICS — крупная российская ИТ-компания с сильной экспертизой в области информационной безопасности. Наша команда активно растёт, и мы ищем начинающих специалистов, которые хотят развивать практику SOC/SIEM и расти в этом направлении.Эта вакансия подходит вам, если вы обучаетесь в вузе на направлении “Информационная безопасность” и готовы погрузиться в реальные задачи аналитика SOC.</p></template>
