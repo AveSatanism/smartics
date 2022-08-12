@@ -31,7 +31,7 @@
         </ul>
         </div>
       </div>
-      <ContantForm class="pb-[112px]"/>
+      <ContactForm class="pb-[112px]"/>
     </div>
     <SiteFooter />
   </div>
@@ -40,7 +40,7 @@
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
 import SiteFooter from '../components/SiteFooter.vue'
-import ContantForm from '../components/ContactForm.vue'
+import ContactForm from '../components/ContactForm.vue'
 import UIButton from '../components/UI/UIButton.vue'
 
 export default {
@@ -48,20 +48,20 @@ export default {
     SiteHeader,
     SiteNavigation,
     UIButton,
-    ContantForm,
+    ContactForm,
     SiteFooter
-    }
+  }
 }
 </script>
 <style>
 .audit_list li {
-    display: flex;
-    column-gap: 8px;
-    padding: 27px 56px;
-    margin-bottom: 20px;
-    border: 2px solid var(--color-3);
-    filter: drop-shadow(0px 4px 8px var(--color-1-background));
-    border-radius: 15px;
-    background-color: var(--color-7);
+  display: flex;
+  column-gap: 8px;
+  padding: 27px 56px;
+  margin-bottom: 20px;
+  border: 2px solid var(--color-3);
+  filter: drop-shadow(0px 4px 8px var(--color-1-background));
+  border-radius: 15px;
+  background-color: var(--color-7);
 }
 </style>
