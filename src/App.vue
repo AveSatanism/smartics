@@ -1,11 +1,9 @@
 <template>
   <div id="app">
     <component :is="layout">
-      <router-view v-slot="{ Component }">
-        <transition name="fade">
-          <component :is="Component" />
-        </transition>
-      </router-view>
+      <transition name="fade">
+        <router-view />
+      </transition>
     </component>
   </div>
 </template>
@@ -23,10 +21,13 @@ export default {
 </script>
 
 <style>
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to {
+
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
