@@ -1,7 +1,5 @@
 <template>
   <div id="DigitalTransformation">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="digitalTrans_background py-[7px] text_1">
       <div class="pt-[55px] min-h-[703px] flex justify-center items-start">
         <img class="h-[429px] pt-[44px]" src="@/assets/pageContentImage/DigitalTransforrmation_image1.png" width="572" height="429" alt="DigitalTransforrmation_image">
@@ -33,22 +31,15 @@
         </div>
       </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 import UIButton from '../components/UI/UIButton.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
-    SiteFooter
-    }
+  }
 }
 </script>
 <style>

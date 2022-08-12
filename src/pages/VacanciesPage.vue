@@ -1,7 +1,5 @@
 <template>
   <div id="Vacancies">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="py-[59px] site_color_1 text_1 text-center">
       <h1 class="text-h1 mb-[40px]">Наши вакансии</h1>
       <p class="mb-[44px]">Наши сотрудники - это члены большой семьи Smartics. Мы городимся каждым!<br> Присоединяйтесь к нашей команде!</p>
@@ -48,24 +46,17 @@
         <img class="vacancies_image h-[616px]" src="@/assets/pageContentImage/VacanciesPage_image.svg" width="344" height="616" alt="vacancies_image">
       </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
 import UIVacanciesCard from '../components/UI/UIVacanciesCard.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 import { PerfectScrollbar } from 'vue2-perfect-scrollbar'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIVacanciesCard,
     PerfectScrollbar,
-    SiteFooter
-    }
+  }
 }
 </script>
 <style src="vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css"/>

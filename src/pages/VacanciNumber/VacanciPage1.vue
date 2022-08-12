@@ -1,7 +1,5 @@
 <template>
   <div>
-    <SiteHeader />
-    <SiteNavigation />
     <div class="flex justify-center px-[30px]">
       <div class="py-[62px] max-w-[1160px] flex flex-col items-center">
         <div class="mb-[73px] w-full self-start flex justify-between items-center site_color_4">
@@ -74,26 +72,19 @@
         <CommunicationForm />
       </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '@/components/SiteHeader.vue'
-import SiteNavigation from '@/components/SiteNavigation.vue'
 import ContantForm from '@/components/ContactForm.vue'
 import CommunicationForm from '@/components/CommunicationForm.vue'
 import UIButton from '@/components/UI/UIButton.vue'
-import SiteFooter from '@/components/SiteFooter.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     ContantForm,
     CommunicationForm,
     UIButton,
-    SiteFooter
-    }
+  }
 }
 </script>
 <style>

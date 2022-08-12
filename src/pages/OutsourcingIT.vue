@@ -1,7 +1,5 @@
 <template>
   <div id="IT-outsourcing">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="site_color_1">
       <div class="flex flex-wrap mb-[104px] gap-x-[28.5px] justify-center">
         <div class="mt-[51px] max-w-[552px] flex flex-col gap-[26px]">
@@ -45,22 +43,15 @@
         <h3 class="mb-[42px] text-h3 text-center">Хотите получить индивидуальное предложение, полностью отвечающее вашим<br> потребностям? Заполните форму для связи ниже:</h3>
       </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
 import UIButton from '../components/UI/UIButton.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
-    SiteFooter
-    }
+  }
 }
 </script>
 <style>

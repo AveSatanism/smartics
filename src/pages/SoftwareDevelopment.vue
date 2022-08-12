@@ -1,7 +1,5 @@
 <template>
   <div id="SoftwareDevelopment">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="site_color_1 soft_dev_background">
       <div class="flex flex-wrap mb-[87px] gap-x-[28.5px] justify-center">
         <div class="mt-[51px] max-w-[552px] flex flex-col gap-[26px]">
@@ -27,23 +25,16 @@
         <SofwareSlider />
       </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
 import UIButton from '../components/UI/UIButton.vue'
 import SofwareSlider from '../components/SofwareSlider.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
     SofwareSlider,
-    SiteFooter
     }
 }
 </script>

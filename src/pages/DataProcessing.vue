@@ -1,7 +1,5 @@
 <template>
   <div id="DataProcessing">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="py-[66px] flex flex-col items-center site_color_1 text-left text_1">
     <h2 class="text-h2 mb-[39px] text-center">Соглашение на обработку персональных данных</h2>
     <div class="w-[794px] flex flex-col gap-y-[39px]">
@@ -37,22 +35,9 @@
         <p>Действующая редакция всегда находится на странице по адресу: smartics.ru/agreement К настоящему Соглашению и отношениям между пользователем и Сайтом, возникающим в связи с применением Соглашения подлежит применению материальное и процессуальное право Российской Федерации.</p>
     </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
-<script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 
-export default {
-  components: {
-    SiteHeader,
-    SiteNavigation,
-    SiteFooter
-    }
-}
-</script>
 <style>
 .list_data_process li{
   display: flex;

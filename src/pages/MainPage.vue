@@ -1,7 +1,5 @@
 <template>
   <div class="text-center site_color_1 mb-[86px]">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="min-h-[642px] flex_content">
       <div class="main_title text_1">
         <h1 class="text-h1">мы точно знаем, <br>что нужно вашему <br>бизнесу</h1>
@@ -29,25 +27,18 @@
     <a href="PartnersInfo"><h2 class="text-h2 mb-[25px]">Нам уже доверяют</h2></a>
     <PartnersSlider />
     <PoliticsApply />
-    <SiteFooter />
   </div>
 </template>
 
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
 import PartnersSlider from '../components/PartnersSlider.vue'
 import PoliticsApply from '../components/PoliticsApply.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 import UIButton from '../components/UI/UIButton.vue'
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
     PartnersSlider,
-    PoliticsApply,
-    SiteFooter
+    PoliticsApply
   }
 }
 </script>

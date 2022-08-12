@@ -1,7 +1,5 @@
 <template>
   <div id="AuditIT">
-    <SiteHeader />
-    <SiteNavigation />
     <div>
       <div class="py-[30px] flex flex-wrap gap-x-[76px] justify-center">
         <div class="mt-[30px] site_color_1 flex flex-col gap-[26px]">
@@ -33,23 +31,16 @@
       </div>
       <ContactForm class="pb-[112px]"/>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 import ContactForm from '../components/ContactForm.vue'
 import UIButton from '../components/UI/UIButton.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
     ContactForm,
-    SiteFooter
   }
 }
 </script>

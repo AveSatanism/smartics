@@ -1,7 +1,5 @@
 <template>
   <div id="IndustrySolutions">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="site_color_1 soft_dev_background">
       <div class="flex flex-wrap mb-[131px] gap-x-[28.5px] justify-center">
         <div class="mt-[120px] max-w-[552px] flex flex-col gap-[37px]">
@@ -73,26 +71,20 @@
         <MiniCasesSolutions />
       </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
+
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
 import UIButton from '../components/UI/UIButton.vue'
 import UISolutionsPanel from '../components/UI/UISolutionsPanel.vue'
 import MiniCasesSolutions from '../components/MiniCasesSolutions.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
     UISolutionsPanel,
     MiniCasesSolutions,
-    SiteFooter
-    }
+  }
 }
 </script>
 <style>

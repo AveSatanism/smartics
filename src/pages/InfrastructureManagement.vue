@@ -1,7 +1,5 @@
 <template>
   <div id="InfrastructureManagement">
-    <SiteHeader />
-    <SiteNavigation />
     <div>
       <div class="infrastructureManagement_background pt-[44px] pb-[82px] flex flex-wrap justify-center items-center site_color_1">
         <div>
@@ -51,23 +49,16 @@
       </div>
       <div class="infrastructureManagement_background_bot h-[115px]"></div>
     </div>
-    <SiteFooter />
   </div>
 </template>
 <script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 import UIButton from '../components/UI/UIButton.vue'
 import UIPanel from '../components/UI/UIPanel.vue'
 
 export default {
   components: {
-    SiteHeader,
-    SiteNavigation,
     UIButton,
-    UIPanel,
-    SiteFooter
+    UIPanel
   },
 }
 </script>

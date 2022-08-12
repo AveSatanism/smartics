@@ -1,7 +1,5 @@
 <template>
   <div id="PrivacyPolicy">
-    <SiteHeader />
-    <SiteNavigation />
     <div class="py-[66px] flex flex-col items-center site_color_1 text-left text_1">
     <h2 class="text-h2 mb-[39px] text-center">ПОЛИТИКА ЗАЩИТЫ И ОБРАБОТКИ<br> ПЕРСОНАЛЬНЫХ ДАННЫХ ООО «СМАРТИКС»</h2>
     <p class="ml-[370px] text-left font-medium text-[16px] leading-relaxed">Утверждена Приказом №01 от 02.03.2022 года<br> Генерального директора ООО «Смартикс»</p>
@@ -136,22 +134,9 @@
         </p>
     </div>
     </div>
-    <SiteFooter />
   </div>
 </template>
-<script>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteNavigation from '../components/SiteNavigation.vue'
-import SiteFooter from '../components/SiteFooter.vue'
 
-export default {
-  components: {
-    SiteHeader,
-    SiteNavigation,
-    SiteFooter
-    }
-}
-</script>
 <style>
 .list_privacy_policy li{
   display: flex;
