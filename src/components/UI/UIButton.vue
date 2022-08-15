@@ -1,5 +1,5 @@
 <template>
-  <button class="button text_button" :class="buttonVariantClass">
+  <button class="button text_button" :class="buttonVariantClass" v-on="$listeners">
     <div v-if="icon" class="mr-2">
       <slot name="icon"></slot>
     </div>
