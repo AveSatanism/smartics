@@ -17,11 +17,11 @@
           </ul>
         </div>
         <div class="gap-[12px]">
-          <img src="@/assets/icon/Skype.svg" width="22.5" height="23.33" alt="skype_logo">
-          <img src="@/assets/icon/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo">
-          <img src="@/assets/icon/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo">
+          <buttom class="cursor-pointer" onClick="window.location.href='https://www.skype.com/ru/';"><img src="@/assets/icon/Skype.svg" width="22.5" height="23.33" alt="skype_logo"></buttom>
+          <buttom class="cursor-pointer" onClick="window.location.href='https://www.whatsapp.com';"><img src="@/assets/icon/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo"></buttom>
+          <buttom class="cursor-pointer" onClick="window.location.href='https://web.telegram.org/z/';"><img src="@/assets/icon/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo"></buttom>
         </div>
-        <UIButton variant="profile">
+        <UIButton onClick="window.location.href = 'https://help.smartics.ru/';" variant="profile">
           <template #icon><img src="@/assets/icon/Profile.svg" width="22" height="22" alt="profile_icon" /></template>
           В helpdesk
         </UIButton>
