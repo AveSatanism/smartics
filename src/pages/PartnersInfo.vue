@@ -1,7 +1,5 @@
 <template>
   <div id="PartnersInfo">
-      <SiteHeader />
-      <SiteNavigation />
       <div class="pt-[44px] px-[30px] pb-[110px] flex flex-col items-center text-center">
         <h2 class="text-h2 mb-[36px] site_color_1">Наши партнеры</h2>
         <div class="max-w-[954px] flex justify-between items-center flex-wrap gap-[62px]">
@@ -22,7 +20,6 @@
           <img src="@/assets/PartnersLogo/Hotel365_icon.png" width="87" height="69" alt="Hotel365_icon_image">
         </div>
       </div>
-      <SiteFooter />
   </div>
 </template>
 
