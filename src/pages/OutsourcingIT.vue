@@ -12,7 +12,7 @@
         </div>
         <img src="@/assets/pageContentImage/IT-outsoucing_image.svg" width="532" height="607" alt="IT-outsoucing_image">
       </div>
-      <div class="max-w-[1160px] mb-[50px] mx-auto splite-border flex flex-col items-center">
+      <div class="max-w-[1160px] mb-[50px] mx-auto flex flex-col items-center">
         <h2 class="mb-[25px] text-h2">Наши преимущества</h2>
         <div class="it_outsourcing_advantages mb-[61px] px-[30px] site_color_7_background flex justify-center gap-x-[12px] max-w-[1159px] min-h-[257px]">
           <div class="mt-[62.5px] flex flex-col items-center gap-y-[10px] text-center  w-[284px]">
@@ -37,10 +37,8 @@
           </div>
         </div>
       </div>
-      <div>
-        <h3 class="mb-[36px] text-h3 text-center">Вы можете выполнить предварительный примерный расчёт стоимости наших<br> услуг для вашей организации:</h3>
+      <div class="hidden">
         <p class="mb-[20px] text-center text_out">Калькулятор услуг</p>
-        <h3 class="mb-[42px] text-h3 text-center">Хотите получить индивидуальное предложение, полностью отвечающее вашим<br> потребностям? Заполните форму для связи ниже:</h3>
       </div>
     </div>
   </div>
