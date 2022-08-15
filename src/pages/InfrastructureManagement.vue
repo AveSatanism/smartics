@@ -11,7 +11,7 @@
       </div>
       <div class="py-[20px] px-[30px] flex flex-col items-center site_color_2_background">
         <h2 class="text-h2 mb-[40px] max-w-[1161px] w-full py-[19px] text-center infrastructureManagement_border site_color_1_background">Управление инфраструктурой</h2>
-        <div class="min-h-[325px] mb-[35px] flex flex-wrap justify-around md:w-[640px] xl:w-[1161px] gap-[25px]">
+        <div class="min-h-[325px] mb-[35px] flex justify-around md:w-[640px] xl:w-[1161px] gap-[25px]">
           <UIPanel v-model="tab" tab-name="card1">Облачная инфраструктура
             <template #icon><img src="@/assets/InfrastructureManagement_image/cloudInfrastructure_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
