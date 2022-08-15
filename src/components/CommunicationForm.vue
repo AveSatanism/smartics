@@ -3,7 +3,7 @@
     <div class="w-[510px] flex flex-col items-end gap-y-[6.5px]">
     <button name="cancel" @click="$emit('resolve', 'close')" class="exit_button w-[20px] h-[20px] flex justify-center items-center site_color_1_background"><img src="@/assets/icon/exit_icon.svg"></button>
     <div class="flex flex-col gap-y-[11px] items-center w-[510px] pt-[30px] pb-[17px] px-[40px] site_color_7 site_color_2_background rounded-[10px]">
-      <p class="text_3">Перемены начинаются с нами!</p> 
+      <p class="text_3">{{ texts.header }}</p> 
       <div class="w-[328.42px] flex justify-between">
         <img class="h-[34.51px]" src="@/assets/icon/communication_form_arrow_left.svg" width="42.59" height="19.69">
         <img class="h-[34.51px]" src="@/assets/icon/communication_form_arrow_right.svg" width="42.59" height="19.69">
@@ -20,12 +20,26 @@
   </dialog>  
 </template>
 <script>
-  import UIButton from './UI/UIButton.vue'
+import UIButton from './UI/UIButton.vue'
+import { defu } from 'defu'
 
-  export default {
-    components: {
-      UIButton
+const defaults = { header: "Перемены начинаются с нами!" }
+
+export default {
+  props: {
+    params: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
+  components: {
+    UIButton
+  },
+  computed: {
+    texts() {
+      return defu(this.params, defaults)
     }
+  }
 }
 </script>
 <style>
