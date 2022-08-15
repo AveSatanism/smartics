@@ -7,7 +7,7 @@
           <p class="text_1">У вас есть задача? У нас уже есть решения!
             <br>Большинство проблем не уникальны (!!!), мы
             <br>подобрали лучшие способы их решения</p>
-          <UIButton variant="orange2">Хочу!</UIButton>
+          <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
         <img class="mt-[50px]" src="@/assets/pageContentImage/IndustrySolutions_image.svg" width="610" height="472" alt="SoftwareDevelopment_image">
       </div>
@@ -78,13 +78,22 @@
 import UIButton from '../components/UI/UIButton.vue'
 import UISolutionsPanel from '../components/UI/UISolutionsPanel.vue'
 import MiniCasesSolutions from '../components/MiniCasesSolutions.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
     UIButton,
     UISolutionsPanel,
     MiniCasesSolutions,
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>

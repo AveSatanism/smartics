@@ -13,7 +13,7 @@
             <br> не нужно иметь опыт составления технических
             <br> заданий.
             <br><br>Просто опишите ваши идеи, а мы сделаем всё остальное!</p>
-          <UIButton variant="orange2">Хочу!</UIButton>
+          <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
         <img class="mt-[49px]" src="@/assets/pageContentImage/SoftwareDevelopment_image.svg" width="575" height="571" alt="SoftwareDevelopment_image">
       </div>
@@ -30,12 +30,21 @@
 <script>
 import UIButton from '../components/UI/UIButton.vue'
 import SofwareSlider from '../components/SofwareSlider.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
     UIButton,
     SofwareSlider,
-    }
+    },
+    methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>

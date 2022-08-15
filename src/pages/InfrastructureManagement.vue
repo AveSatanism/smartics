@@ -5,7 +5,7 @@
         <div>
           <h1 class="text-h1 mb-[26px]">управление<br> инфраструктурой</h1>
           <p class="mb-[52px] text_1">Перечислить наименования известных программ с<br> узкой направленностью, которые заменяет штука<br> Егора<br> а вообще она делает это еще лучше</p>
-          <UIButton variant="orange2">Хочу!</UIButton>
+          <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
         <img class="h-[554px]" src="@/assets/pageContentImage/InfrastructureManagement_image.png" width="597" height="554" alt="InfrastructureManagement_image">
       </div>
@@ -54,6 +54,10 @@
 <script>
 import UIButton from '../components/UI/UIButton.vue'
 import UIPanel from '../components/UI/UIPanel.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
@@ -64,7 +68,12 @@ export default {
     return {
       tab: 0
     }
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>

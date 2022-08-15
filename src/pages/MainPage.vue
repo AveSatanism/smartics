@@ -6,18 +6,18 @@
         <p>Мы - SMARTICS FAMILY - разработчики, поставщики,<br>
            интеграторы, помощники в решении ваших IT проблем.<br>
             Мы решаем задачу, улучшая бизнес процесс, а не <br>оборудование.</p>
-        <UIButton variant="orange1">связаться с нами</UIButton> 
+        <UIButton variant="orange1" @click="showCommunicationFormDialog()">связаться с нами</UIButton> 
       </div>
       <img class="ml-[27px]" src="@/assets/pageContentImage/MainPage_image.png" width="516" height="626" alt="main_page_image">
     </div>
     <div class="communication_section flex_content py-[16px] site_color_3_background mb-[48px]">
       <div>
         <h3 class="text-h3">Как мы можем помочь<br> вашему бизнесу?</h3> 
-        <UIButton variant="white">узнать варианты</UIButton>
+        <UIButton variant="white" @click="showCommunicationFormDialog()">узнать варианты</UIButton>
       </div>
       <div class="communication_border">
         <h3 class="text-h3">Как стать<br> нашими партнёрами?</h3> 
-        <UIButton variant="white">свяжитесь с нами</UIButton>
+        <UIButton variant="white" @click="showCommunicationFormDialog({header: 'Давайте дружить!'})">свяжитесь с нами</UIButton>
       </div>
       <div class="communication_border">
         <h3 class="text-h3">Как стать частью<br> команды?</h3>
@@ -34,12 +34,21 @@
 import PartnersSlider from '../components/PartnersSlider.vue'
 import PoliticsApply from '../components/PoliticsApply.vue'
 import UIButton from '../components/UI/UIButton.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 export default {
   components: {
     UIButton,
     PartnersSlider,
     PoliticsApply
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 

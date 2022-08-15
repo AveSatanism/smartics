@@ -9,7 +9,7 @@
           не нужно. <br>Часто простая задача решается дорого и не 
           <br>эффективно только из-за того, что сисадмин не <br>знает, как решить ее по-другому.</p>
           <p class="text_3">SMARTICS - ваш лучший друг и помощник. <br>Мы готовы дополнить вашего админа и помочь ему.</p>
-          <UIButton variant="orange2">Хочу!</UIButton>
+          <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
         <img class="h-[614px]" src="@/assets/pageContentImage/AuditIT_image.png" width="406" height="614" alt="AuditIT_image">
       </div>
@@ -35,13 +35,22 @@
 </template>
 <script>
 import ContactForm from '../components/ContactForm.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
 import UIButton from '../components/UI/UIButton.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
     UIButton,
     ContactForm,
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>

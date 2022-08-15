@@ -8,7 +8,7 @@
             <br>Группа компаний СМАРТИКС на протяжении 15 лет
             <br>осуществляет техническую поддержку компаний
             <br> самых разных отраслевых направлений</p>
-          <UIButton variant="orange2">Хочу!</UIButton>
+          <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
         <img src="@/assets/pageContentImage/IT-outsoucing_image.svg" width="532" height="607" alt="IT-outsoucing_image">
       </div>
@@ -45,11 +45,20 @@
 </template>
 <script>
 import UIButton from '../components/UI/UIButton.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
     UIButton,
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>

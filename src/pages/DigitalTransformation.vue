@@ -13,7 +13,7 @@
             <li><p>снижение издержек за счёт отсутствия простоя <br>оборудования</p></li>
             <li><p>освобождение от непрофильных IT задач</p></li>
           </ul>
-          <UIButton variant="orange2">Хочу!</UIButton>
+          <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>    
       </div>
       <div>
@@ -35,11 +35,20 @@
 </template>
 <script>
 import UIButton from '../components/UI/UIButton.vue'
+import CommunicationForm from '@/components/CommunicationForm.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
     UIButton,
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>
