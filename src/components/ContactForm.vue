@@ -11,13 +11,13 @@
           <br>Мск <a href="tel:8(495)-424-43-74">8-495-424-43-75</a></p>
         </div>
         <img class="form_arrow" src="@/assets/icon/form_arrow_icon.svg" width="81.02" height="40.69" alt="form_arrow_icon">
-        <form class="pt-[35px] flex flex-col gap-y-[12px] site_color_1">
-          <p>
+        <form class="pt-[35px] flex flex-col gap-y-[12px] site_color_1" netlify>
+          <div>
             <input class="w-[194px] h-[29px] p-[8px] rounded-[5px] text_10" type="text" name="name" placeholder="Контактное лицо*" required>
-          </p>
-          <p>
+          </div>
+          <div>
             <input class="w-[194px] h-[29px] p-[8px] rounded-[5px] text_10" type="tel" name="tel" placeholder="Контактный телефон*" required>
-          </p>
+          </div>
           <UIButton variant="submit">ОТПРАВИТЬ</UIButton> 
         </form>
       </div>

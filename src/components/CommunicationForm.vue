@@ -8,10 +8,10 @@
         <img class="h-[34.51px]" src="@/assets/icon/communication_form_arrow_left.svg" width="42.59" height="19.69">
         <img class="h-[34.51px]" src="@/assets/icon/communication_form_arrow_right.svg" width="42.59" height="19.69">
       </div>
-      <form class="flex flex-col items-center gap-y-[12px] site_color_1">
-      <p>
+      <form class="flex flex-col items-center gap-y-[12px] site_color_1" netlify>
+      <div>
         <input class="w-[194px] h-[29px] p-[8px] rounded-[10px] text_10" type="tel" name="tel" placeholder="ТЕЛ.:" required>
-      </p>
+      </div>
       <UIButton variant="letsGo">ПОЕХАЛИ!</UIButton> 
     </form>
     <p class="text_10 text-center">Нажимая на кнопку, вы даёте согласие на обработку персональных данных<br> и соглашаетесь с политикой конфиденциальности</p>
