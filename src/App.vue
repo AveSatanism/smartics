@@ -5,13 +5,18 @@
         <router-view />
       </transition>
     </component>
+    <PromiseDialogsWrapper />
   </div>
 </template>
 
 <script>
+import { PromiseDialogsWrapper } from "vue-promise-dialogs";
 import EmptyLayout from '@/layouts/empty'
 
 export default {
+  components: {
+    PromiseDialogsWrapper
+  },
   computed: {
     layout() {
       return this.$route.meta.layout || EmptyLayout
