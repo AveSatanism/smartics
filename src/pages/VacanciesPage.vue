@@ -6,7 +6,7 @@
       <div class="flex justify-center">
         <perfect-scrollbar class="h-[620px]">
         <div class="pr-[8px] pl-[44px] vacancies_scroll h-[620px] flex flex-col gap-[40px]">
-        <router-link to="Vacanci1"><UIVacanciesCard>
+        <router-link to="Vacanci/1"><UIVacanciesCard>
           <template #vacancies_title><p>стажёр по информационной безопасности</p></template>
           <template #description><p>SMARTICS — крупная российская ИТ-компания с сильной экспертизой в области информационной безопасности. Наша команда активно растёт, и мы ищем начинающих специалистов, которые хотят развивать практику SOC/SIEM и расти в этом направлении.</p></template>
           <template #experience><p>опыт 0-1 лет</p></template>
