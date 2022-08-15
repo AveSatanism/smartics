@@ -7,7 +7,7 @@
             <router-link to="Vacancies"><img src="@/assets/icon/BackArrow_icon.svg" width="28.83" height="15" alt="backArrow_icon"></router-link>
             <h2 class="text-h2 ml-[16px]">стажёр по информационной безопасности</h2>
           </div>
-          <UIButton variant="orange1">связаться с нами</UIButton> 
+          <UIButton variant="orange1" @click="showCommunicationFormDialog({})">связаться с нами</UIButton> 
         </div>
         <div class="mb-[26px] text_button site_color_2 flex flex-wrap gap-[66.67px]">
           <div class="flex items-center gap-[11px]">
@@ -69,7 +69,6 @@
           </div>
         </div>
         <ContantForm />
-        <CommunicationForm />
       </div>
     </div>
   </div>
@@ -78,13 +77,20 @@
 import ContantForm from '@/components/ContactForm.vue'
 import CommunicationForm from '@/components/CommunicationForm.vue'
 import UIButton from '@/components/UI/UIButton.vue'
+import { createPromiseDialog } from "vue-promise-dialogs";
+
+const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
 export default {
   components: {
     ContantForm,
-    CommunicationForm,
     UIButton,
-  }
+  },
+  methods: {
+    showCommunicationFormDialog(params) {
+      CommunicationFormDialog(params);
+    },
+  },
 }
 </script>
 <style>
