@@ -7,7 +7,7 @@
             <router-link to="Vacancies"><img src="@/assets/icon/BackArrow_icon.svg" width="28.83" height="15" alt="backArrow_icon"></router-link>
             <h2 class="text-h2 ml-[16px]">стажёр по информационной безопасности</h2>
           </div>
-          <UIButton variant="orange1" @click="showCommunicationFormDialog({})">связаться с нами</UIButton> 
+          <UIButton variant="orange1" @click="showCommunicationFormDialog()">связаться с нами</UIButton> 
         </div>
         <div class="mb-[26px] text_button site_color_2 flex flex-wrap gap-[66.67px]">
           <div class="flex items-center gap-[11px]">
