@@ -12,36 +12,36 @@
       <div class="py-[20px] px-[30px] flex flex-col items-center site_color_2_background">
         <h2 class="text-h2 mb-[40px] max-w-[1161px] w-full py-[19px] text-center infrastructureManagement_border site_color_1_background">Управление инфраструктурой</h2>
         <div class="min-h-[325px] mb-[35px] flex flex-wrap justify-around md:w-[640px] xl:w-[1161px] gap-[25px]">
-          <UIPanel>Облачная инфраструктура
+          <UIPanel v-model="tab" tab-name="card1">Облачная инфраструктура
             <template #icon><img src="@/assets/InfrastructureManagement_image/cloudInfrastructure_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
-          <UIPanel>Системы безопасности
+          <UIPanel v-model="tab" tab-name="card2">Системы безопасности
             <template #icon><img src="@/assets/InfrastructureManagement_image/securitySystems_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
-          <UIPanel>ЦОД
+          <UIPanel v-model="tab" tab-name="card3">ЦОД
             <template #icon><img src="@/assets/InfrastructureManagement_image/COD_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
-          <UIPanel>Телеком
+          <UIPanel v-model="tab" tab-name="card4">Телеком
             <template #icon><img src="@/assets/InfrastructureManagement_image/telecom_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
-          <UIPanel>Физическая безопастность
+          <UIPanel v-model="tab" tab-name="card5">Физическая безопастность
             <template #icon><img src="@/assets/InfrastructureManagement_image/physicalSecurity_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
-          <UIPanel>Сети
+          <UIPanel v-model="tab" tab-name="card6">Сети
             <template #icon><img src="@/assets/InfrastructureManagement_image/networks_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
-          <UIPanel>Мультимедиа
+          <UIPanel v-model="tab" tab-name="card7">Мультимедиа
             <template #icon><img src="@/assets/InfrastructureManagement_image/multimedia_icon.svg"></template>
             <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIPanel>
@@ -60,6 +60,11 @@ export default {
     UIButton,
     UIPanel
   },
+  data() {
+    return {
+      tab: 0
+    }
+  }
 }
 </script>
 <style>

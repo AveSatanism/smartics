@@ -1,11 +1,11 @@
 <template>
   <div class="select_card h-[200px]">
-    <div class="flex justify-center select_card_visibility"><p class="select_card_point site_color_1">•</p></div>
-    <button class="panel mb-[20px] text_8 site_color_1">
+    <div class="flex justify-center select_card_visibility" :class="{ active: isActive }"><p class="select_card_point site_color_1">•</p></div>
+    <button class="panel mb-[20px] text_8 site_color_1" :class="{ active: isActive }" @click="toggleActive()">
       <slot></slot>
       <slot name="icon"></slot>
     </button>
-    <div class="overflow-hidden card_description flex items-center w-[1160px] py-[36px] pl-[125px] text_5 site_color_1 site_color_3_background" v-if="cardNumber === 'card1'">
+    <div v-if="isActive" class="overflow-hidden card_description flex items-center w-[1160px] py-[36px] pl-[125px] text_5 site_color_1 site_color_3_background">
       <div class="flex flex-col gap-y-[12px]">
         <div v-if="description1" class="flex items-center gap-x-[24px] w-[841px]">
           <p class="card_point site_color_4">•</p>
@@ -32,15 +32,18 @@ export default {
     disabled: {
       default: false,
     },
+    value: {
+      type: String,
+      required: true
+    },
+    tabName: {
+      type: String,
+      default: null
+    }
   },
   data() {
     return {
       cardNumber: ''
-    }
-  },
-  methods: {
-    setNumber(cardNumber) {
-      this.cardNumber = cardNumber
     }
   },
   computed: {
@@ -50,7 +53,27 @@ export default {
     description2() {
       return Object.keys(this.$slots).includes('description2')
     },
-  }
+    activeTab: {
+      get() {
+        return this.value
+      },
+      set(val) {
+        this.$emit('input', val)
+      }
+    },
+    isActive() {
+      return this.activeTab === this.tabName
+    }
+  },
+  methods: {
+    toggleActive() {
+      if (this.activeTab === this.tabName) {
+        this.activeTab = null
+      } else {
+        this.activeTab = this.tabName
+      }
+    }
+  },
 };
 </script>
 <style>
@@ -58,6 +81,7 @@ export default {
   padding: 13px 0;
   height: 180px;
   width: 137px;
+  transition: width 0.3s ease-in, font-size 0.3s ease-in;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,7 +90,7 @@ export default {
   border-radius: 15px;
   background-color: var(--color-7);
 }
-.panel:hover {
+.panel:hover, .panel.active {
   font-size: 14px;
   letter-spacing: 0.03em;
   width: 176.27px;
@@ -76,7 +100,7 @@ export default {
   height: 90px;
   width: 93px;
 }
-.panel:hover img {
+.panel:hover img, .panel.active img {
   filter: brightness(2);
 }
 .card_description {
@@ -111,7 +135,7 @@ export default {
   width: 17px;
   top: -20px;
 }
-.select_card_visibility {
+.select_card_visibility:not(.active) {
   visibility: hidden;
 }
 .select_card:hover .select_card_visibility{
