@@ -15,47 +15,47 @@
         <h2 class="mb-[35px] text-h2 text-center">МЫ ЗНАЕМ, КАК СДЕЛАТЬ ХОРОШО, <br>ГОТОВЫЕ РЕШЕНИЯ SMARTICS:</h2>
         <div class="flex justify-center">
           <div class="mb-[128px] grid grid-cols-3 gap-[41px] w-[811px]">  
-            <UISolutionsPanel><p>Медицинские организации</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel1"><p>Медицинские организации</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/medical_organizations_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Перевозки</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel2"><p>Перевозки</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/transportation_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Гостиничное дело</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel3"><p>Гостиничное дело</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/hotel_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Учебные заведения</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel4"><p>Учебные заведения</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/study_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Производства</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel5"><p>Производства</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/productions_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Государственный сектор</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel6"><p>Государственный сектор</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/public_sector_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Крупный бизнес</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel7"><p>Крупный бизнес</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/big_business_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>Малый и средний бизнес</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel8"><p>Малый и средний бизнес</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/small_busines.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
             </UISolutionsPanel>
-            <UISolutionsPanel><p>... или создадим новое!</p>
+            <UISolutionsPanel v-model="tab" tab-name="panel9"><p>... или создадим новое!</p>
               <template #icon><img src="@/assets/IndustrySolutions_icon/other_icon.svg"></template>
               <template #description1><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
               <template #description2><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
@@ -88,6 +88,11 @@ export default {
     UIButton,
     UISolutionsPanel,
     MiniCasesSolutions,
+  },
+  data() {
+    return {
+      tab: 0
+    }
   },
   methods: {
     showCommunicationFormDialog(params) {

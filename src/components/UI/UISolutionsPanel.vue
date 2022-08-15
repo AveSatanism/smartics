@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="flex justify-center"></div>
-    <button class="solutions_panel text_5 site_color_1" @click="setNumber('card1')">
+    <div :class="{ active: isActive }" class="flex justify-center"></div>
+    <button class="solutions_panel text_5 site_color_1" :class="{ active: isActive }" @click="toggleActive()">
       <slot></slot>
       <slot name="icon"></slot>
     </button>
-    <div class="overflow-hidden solutions_card_description flex items-center mt-[34px] pl-[48px] w-[811px] min-h-[260px] text_5 site_color_1 site_color_3_background" v-if="cardNumber === 'card1'">
+    <div v-if="isActive" class="overflow-hidden solutions_card_description flex items-center mt-[34px] pl-[48px] w-[811px] min-h-[260px] text_5 site_color_1 site_color_3_background">
       <div class="flex flex-col gap-y-[12px] my-[38.5px] text_button">
         <div v-if="description1" class="flex items-center gap-x-[12px] max-w-[480px]">
           <p class="solutions_card_point site_color_4">•</p>
@@ -32,15 +32,18 @@ export default {
     disabled: {
       default: false,
     },
+    value: {
+      type: String,
+      required: true
+    },
+    tabName: {
+      type: String,
+      default: null
+    }
   },
   data() {
     return {
-      cardNumber: ''
-    }
-  },
-  methods: {
-    setNumber(cardNumber) {
-      this.cardNumber = cardNumber
+      panelNumber: ''
     }
   },
   computed: {
@@ -50,7 +53,27 @@ export default {
     description2() {
       return Object.keys(this.$slots).includes('description2')
     },
-  }
+    activeTab: {
+      get() {
+        return this.value
+      },
+      set(val) {
+        this.$emit('input', val)
+      }
+    },
+    isActive() {
+      return this.activeTab === this.tabName
+    }
+  },
+  methods: {
+    toggleActive() {
+      if (this.activeTab === this.tabName) {
+        this.activeTab = null
+      } else {
+        this.activeTab = this.tabName
+      }
+    }
+  },
 };
 </script>
 <style>
