@@ -18,7 +18,7 @@
   .site_navigation_container {
     position: sticky;
     top: 79px;
-    z-index: 2;
+    z-index: 10;
     min-height: 45px;
     color: var(--color-7);
   }

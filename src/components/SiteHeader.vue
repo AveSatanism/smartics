@@ -44,7 +44,7 @@ export default {
 header {
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .site_header_container {
