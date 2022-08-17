@@ -64,7 +64,19 @@
         </div>
       </div>
       <div>
-        <h2 class="mb-[58px] text-h2 text-center">И для всех направлений мы готовы:</h2>
+        <h2 class="mb-[38px] text-h2 text-center">И для всех направлений мы готовы:</h2>
+        <div class="mb-[124px] flex flex-col gap-y-[10px]">
+        <UIAccordion v-model="tab" tab-name="accordion1">
+          <template #number><h2>01.</h2></template>
+          <template #title><h3>Оказать юридическое сопровождение</h3></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordion>
+        <UIAccordion v-model="tab" tab-name="accordion2">
+          <template #number><p>02.</p></template>
+          <template #title><p>Провести аудит и консалтинг по информационной безопасности</p></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordion>
+        </div>
       </div>
       <div class="mb-[180px]">
         <h2 class="mb-[58px] text-h2 text-center site_color_2">Мини кейсы отраслевых решений:</h2>
@@ -77,6 +89,7 @@
 <script>
 import UIButton from '../components/UI/UIButton.vue'
 import UISolutionsPanel from '../components/UI/UISolutionsPanel.vue'
+import UIAccordion from '../components/UI/UIAccordion.vue'
 import MiniCasesSolutions from '../components/MiniCasesSolutions.vue'
 import CommunicationForm from '@/components/CommunicationForm.vue'
 import { createPromiseDialog } from "vue-promise-dialogs";
@@ -87,6 +100,7 @@ export default {
   components: {
     UIButton,
     UISolutionsPanel,
+    UIAccordion,
     MiniCasesSolutions,
   },
   data() {
