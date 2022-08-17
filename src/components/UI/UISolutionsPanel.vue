@@ -4,6 +4,7 @@
     <button class="solutions_panel text_5 site_color_1" :class="{ active: isActive }" @click="toggleActive()">
       <slot></slot>
       <slot name="icon"></slot>
+      <div class="solutions_arrow" :class="{ active: isActive }"><img src="@/assets/icon/solutions_arrow_icon.svg" width="38" height="38" alt="solutions_arrow_icon"></div>
     </button>
     <div v-if="isActive" class="overflow-hidden solutions_card_description flex items-center mt-[34px] pl-[48px] w-[811px] min-h-[260px] text_5 site_color_1 site_color_3_background">
       <div class="flex flex-col gap-y-[12px] my-[38.5px] text_button">
@@ -89,20 +90,40 @@ export default {
   border-radius: 15px;
   background-color: var(--color-3);
 }
+.solutions_arrow {
+  display: none;
+}
+.solutions_arrow.active {
+  display: inline;
+  position: relative;
+  top: 160px;
+  z-index: 3;
+}
 .solutions_panel p{
     z-index: 1;
     margin-top: 12px;
 }
-.solutions_panel img {
+.solutions_panel .solutions_icon{
   height: 148px;
   width: 148px;
 }
-.solutions_panel:hover img {
-  position: relative;
-  top: -58px;
+.solutions_panel.active {
+  background-color: var(--color-6);
+}
+.solutions_panel.active{
+  justify-content: center;
+}
+.solutions_panel.active p{
+  position: absolute;
+  font-size: 19px;
+  line-height: 28px;
+}
+.solutions_panel:hover .solutions_icon, .solutions_panel.active .solutions_icon{
+  position: absolute;
   height: 225px;
   width: 225px;
 }
+
 .solutions_card_description {
   position: absolute;
   z-index: 2;
