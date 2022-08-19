@@ -1,24 +1,22 @@
 <template>
   <div class="flex justify-center">
-  <div class="flex flex-col w-[1126px] accordion_border" :class="{ active: isActive }">
-    <div class="flex items-center py-[20px] px-[24px] gap-x-[16px]" :class="{ active: isActive }">
-      <button v-if="isActive" class="" @click="toggleOpen()">
-        <img src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
+    <div class="flex flex-col w-[1126px] accordion_border" :class="{ active: isActive }">
+      <button class="flex items-center py-[20px] px-[24px] gap-x-[16px]" :class="{ active: isActive }" @click="toggleOpen()">
+        <div class="transition-transform" :class="{ 'rotate-180': isActive }">
+          <img src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
+        </div>
+        <div class="text-h2">
+          <slot name="number"></slot>
+        </div>
+        <div class="text-h3">
+          <slot name="title"></slot>
+        </div>
       </button>
-      <button v-else class="" @click="toggleOpen()">
-        <img src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
-      </button>
-      <div class="text-h2">
-      <slot name="number"></slot>
-      </div>
-      <div class="text-h3">
-      <slot name="title"></slot>
+      <div v-if="isActive"
+        class="accordion_description site_color_3_background text_1 p-[20px] mx-[40px] mb-[20px] rounded-[10px]">
+        <slot name="description"></slot>
       </div>
     </div>
-    <div v-if="isActive" class="accordion_description site_color_3_background text_1 p-[20px] mx-[40px] mb-[20px] rounded-[10px]">
-      <slot name="description"></slot>
-    </div>
-  </div>
   </div>
 </template>
 <script>
