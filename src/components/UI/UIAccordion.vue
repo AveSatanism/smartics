@@ -22,24 +22,17 @@
 <script>
 export default {
   props: {
-    value: {
-      type: String,
-      required: true
-    },
     tabName: {
       type: String,
       default: null
     }
   },
+  data() {
+    return {
+      activeTab: null
+    }
+  },
   computed: {
-    activeTab: {
-      get() {
-        return this.value
-      },
-      set(val) {
-        this.$emit('input', val)
-      }
-    },
     isActive() {
       return this.activeTab === this.tabName
     }
