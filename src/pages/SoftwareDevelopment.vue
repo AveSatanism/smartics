@@ -20,27 +20,27 @@
       <div>
         <h3 class="mb-[28px] text-h3 text-center">МЫ ГОТОВЫ ОСУЩЕСТВИТЬ:</h3>
         <div class="mb-[134px] flex flex-col gap-y-[10px]">
-          <UIAccordion v-model="tab" tab-name="accordion1">
+          <UIAccordion tab-name="accordion1">
             <template #number><h2>01.</h2></template>
             <template #title><h3>Составление технического задания</h3></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordion>
-          <UIAccordion v-model="tab" tab-name="accordion2">
+          <UIAccordion tab-name="accordion2">
             <template #number><h2>02.</h2></template>
             <template #title><h3>Проектирование и разработка архитектуры</h3></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordion>
-          <UIAccordion v-model="tab" tab-name="accordion3">
+          <UIAccordion tab-name="accordion3">
             <template #number><h2>03.</h2></template>
             <template #title><h3>Написание программного кода и прототипирование</h3></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordion>
-          <UIAccordion v-model="tab" tab-name="accordion4">
+          <UIAccordion tab-name="accordion4">
             <template #number><h2>04.</h2></template>
             <template #title><h3>Интеграция в действующие системы</h3></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordion>
-          <UIAccordion v-model="tab" tab-name="accordion5">
+          <UIAccordion tab-name="accordion5">
             <template #number><h2>05.</h2></template>
             <template #title><h3>Обслуживание и сопровождение ПО, его доработки</h3></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
@@ -69,12 +69,7 @@ export default {
     UIAccordion,
     SofwareSlider,
   },
-  data() {
-    return {
-      tab: ""
-    }
-  },
-    methods: {
+  methods: {
     showCommunicationFormDialog(params) {
       CommunicationFormDialog(params);
     },
