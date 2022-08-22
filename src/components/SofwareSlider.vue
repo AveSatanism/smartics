@@ -2,13 +2,13 @@
 <section class="software_slider_container flex justify-center mb-[67px]">
 <carousel-3d :controls-visible="true" :width="597" :height="398" :space="710" :inverseScaling="150" :perspective="0" :controlsWidth="27" :controlsHeight="27" :border="0" :count="3">
   <slide :index="0">
-    <img src="@/assets/SoftwareDevelopmentSlider/Slide_image1.png" alt="Slide_image1">
+    <img class="h-[398px]" src="@/assets/SoftwareDevelopmentSlider/Slide_image1.png" alt="Slide_image1">
   </slide>
   <slide :index="1">
-    <img src="@/assets/SoftwareDevelopmentSlider/Slide_image2.png" alt="Slide_image2">
+    <img class="h-[398px]" src="@/assets/SoftwareDevelopmentSlider/Slide_image2.png" alt="Slide_image2">
   </slide>
   <slide :index="2">
-    <img src="@/assets/SoftwareDevelopmentSlider/Slide_image3.png" alt="Slide_image3">
+    <img class="h-[398px]" src="@/assets/SoftwareDevelopmentSlider/Slide_image3.png" alt="Slide_image3">
   </slide>
 </carousel-3d>
 </section>
