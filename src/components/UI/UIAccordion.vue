@@ -2,7 +2,7 @@
   <div class="flex justify-center">
     <div class="flex flex-col w-[1126px] accordion_border" :class="{ active: isActive }">
       <button class="flex items-center py-[20px] px-[24px] gap-x-[16px]" :class="{ active: isActive }" @click="toggleOpen()">
-        <div class="transition-transform" :class="{ 'rotate-180': isActive }">
+        <div class="transition-transform" :class="{ 'rotate-180': isActive, accordion_filter: isActive }">
           <img src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
         </div>
         <div class="text-h2">
@@ -54,5 +54,8 @@ export default {
   border: 1px solid rgba(221, 236, 255, 0.7);
   box-shadow: 0px 4px 4px rgba(221, 236, 255, 0.5);
   border-radius: 10px;
+}
+.accordion_filter {
+  filter: grayscale(1);
 }
 </style>
