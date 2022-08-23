@@ -38,13 +38,16 @@
         </div>
       </div>
       <div class="hidden">
-        <p class="mb-[20px] text-center text_out">Калькулятор услуг</p>
+        <p class="mb-[24px] text-center text_out">Калькулятор услуг</p>
+        <h3 class="mb-[29px] text-h3 text-center">Все просто!<br> Выберите количество серверов и компьютеров + ваш рабочий график. <br><br>А все остальное уже включено в стоимость.</h3>
+        <PriceCalculator />
       </div>
     </div>
   </div>
 </template>
 <script>
 import UIButton from '../components/UI/UIButton.vue'
+import PriceCalculator from '../components/PriceCalculator.vue'
 import CommunicationForm from '@/components/CommunicationForm.vue'
 import { createPromiseDialog } from "vue-promise-dialogs";
 
@@ -53,6 +56,7 @@ const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 export default {
   components: {
     UIButton,
+    PriceCalculator,
   },
   methods: {
     showCommunicationFormDialog(params) {
