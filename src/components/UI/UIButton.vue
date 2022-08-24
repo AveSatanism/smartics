@@ -57,12 +57,24 @@ export default {
   width: 159px;
   height: 33px;
 }
-.button.button--orange1:hover, .button.button--orange2:hover, .button.button--orange3:hover, .button.button--white{
+.button.button--letsGo {
+  width: 150px;
+  height: 31px;
+  background: var(--color-1);
+  color: var(--color-7);
+}
+.button.button--personalOffer {
+  width: 426px;
+  height: 40px;
+  background: var(--color-1);
+  color: var(--color-7);
+}
+.button.button--orange1:hover, .button.button--orange2:hover, .button.button--orange3:hover, .button.button--personalOffer:hover, .button.button--white{
   border: 1px solid var(--color-4);
-  background: none;
+  background: var(--color-7);
   color: var(--color-4);
 }
-.button.button--orange1:active, .button.button--orange2:active, .button.button--orange3:active{
+.button.button--orange1:active, .button.button--orange2:active, .button.button--orange3:active, .button.button--submit:active, .button.button--personalOffer:active, .button.button--letsGo:active{
   background: var(--color-4);
   color: var(--color-7);
 }
@@ -86,17 +98,5 @@ export default {
   border-radius: 5px !important;
   background: var(--color-1);
   color: var(--color-7);
-}
-.button.button--submit:active {
-  background: var(--color-4);
-}
-.button.button--letsGo {
-  width: 150px;
-  height: 31px;
-  background: var(--color-1);
-  color: var(--color-7);
-}
-.button.button--letsGo:active {
-  background: var(--color-4);
 }
 </style>

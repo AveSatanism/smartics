@@ -2,7 +2,17 @@
   <div class="mb-[112px] flex justify-center">
     <div class="flex flex-col w-[1160px] site_color_3_background rounded-[15px]">
       <div class="min-h-[290px]"></div>
-      <div class="min-h-[289px] site_color_2_background"></div>
+      <div class="min-h-[289px] flex justify-center items-center gap-x-[94px] site_color_2_background">
+        <form class="flex flex-col items-center gap-y-[16px] site_color_1" netlify>
+          <p class="mb-[27px] text_1 text-center site_color_7">У вас более 20 компьютеров или 2 серверов? <br>Заполните форму и мы свяжемся с Вами</p>
+          <div class="calculator_form_input flex justify-center items-center">
+            <p class="calculator_form_placeholder text_6 absolute site_color_5">Контактный телефон</p>
+            <input class="w-[426px] h-[35px] p-[8px] rounded-[10px] text_10" type="tel" name="tel" required>
+          </div>
+          <UIButton variant="personalOffer">Получить персональное предложение</UIButton> 
+        </form>
+        <img class="self-end" src="@/assets/pageContentImage/IT-outsoucing_calculator_image.svg" width="384" height="258" alt="IT-outsoucing_calculator_image">  
+      </div>
       <div class="h-[394px] grid grid-cols-3 min-h-[394px] px-[218px] pt-[59px] pb-[83px]">
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
@@ -123,11 +133,15 @@
 
 <script>
 import DescriptionModal from '@/components/DescriptionModal.vue'
+import UIButton from './UI/UIButton.vue'
 import { createPromiseDialog } from "vue-promise-dialogs";
 
 const DescriptionModalDialog = createPromiseDialog(DescriptionModal);
 
 export default {
+  components: {
+    UIButton,
+  },
   methods: {
     showDescriptionModalDialog(params) {
       DescriptionModalDialog(params);
@@ -137,4 +151,7 @@ export default {
 </script>
 
 <style>
+.calculator_form_input:focus-within .calculator_form_placeholder{
+  display: none;
+}
 </style>
