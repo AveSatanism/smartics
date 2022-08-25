@@ -25,7 +25,7 @@
               <button :class="{ maxCountServers: countServers === 2 }" type="button" @click="countServers++, calculationPrice()"><img class="h-[23px]" src="@/assets/icon/incrementCount_icon.svg" width="23" height="23"></button>
             </div>
           </div>
-          <div class="">
+          <div>
             <p class="mb-[17px] text_8 text-center">Время предоставление услуги</p>
           <fieldset class="flex gap-x-[15px] calculator_button input_display text_8">
             <div>
@@ -51,7 +51,7 @@
           <UIButton variant="orange1" @click="showCommunicationFormDialog()">связаться с нами</UIButton>
         </div>
       </div>
-      <div class="min-h-[289px] flex justify-center items-center gap-x-[94px] site_color_2_background">
+      <div :class="{ special_offer: countServers === 2 || countComputers === 20 }" class="hidden min-h-[289px] flex justify-center items-center gap-x-[94px] site_color_2_background">
         <form class="flex flex-col items-center gap-y-[16px] site_color_1" netlify>
           <p class="mb-[27px] text_1 text-center site_color_7">У вас более 20 компьютеров или 2 серверов? <br>Заполните форму и мы свяжемся с Вами</p>
           <div class="calculator_form_input flex justify-center items-center">
@@ -249,5 +249,8 @@ export default {
 .minCount, .maxCountComputers, .maxCountServers {
   pointer-events: none;
   filter: grayscale(0.6);
+}
+.special_offer {
+  display: flex;
 }
 </style>
