@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden">
+      <div class="">
         <p class="mb-[24px] text-center text_out">Калькулятор услуг</p>
         <h3 class="mb-[29px] text-h3 text-center">Все просто!<br> Выберите количество серверов и компьютеров + ваш рабочий график. <br><br>А все остальное уже включено в стоимость.</h3>
         <PriceCalculator />
