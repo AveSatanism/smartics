@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center min-h-[290px] pt-[62px] px-[99px]">
         <form class="mb-[56px] flex gap-x-[102px]">
           <div class="flex flex-col items-center">
-            <p class="mb-[17px] text_8">Обслуживание компьютеров</p>
+            <p class="mb-[17px] text_8 text-center">Обслуживание компьютеров</p>
             <p class="mb-[5px] text_7">Количество</p>
             <div class="flex gap-x-[8.5px]">
               <button :class="{ minCount: countComputers === 0 }" type="button" @click="countComputers--, calculationPrice()"><img class="h-[23px]" src="@/assets/icon/decrementCount_icon.svg" width="23" height="23"></button>
@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <p class="mb-[17px] text_8">Обслуживание серверов</p>
+            <p class="mb-[17px] text_8 text-center">Обслуживание серверов</p>
             <p class="mb-[5px] text_7">Количество</p>
             <div class="flex gap-x-[8.5px]">
               <button :class="{ minCount: countServers === 0 }" type="button" @click="countServers--, calculationPrice()"><img class="h-[23px]" src="@/assets/icon/decrementCount_icon.svg" width="23" height="23"></button>
