@@ -7,8 +7,8 @@
         <div class="text-center">
           <h3 class="text-h3 mb-[24px]">Заполните форму<br> и мы свяжемся с Вами</h3>
           <p class="text_6">Или позвоните нам:</p>
-          <p class="text_button">С-Пб <a href="tel:8(812)-424-43-74">8-812-424-43-75</a>
-          <br>Мск <a href="tel:8(495)-424-43-74">8-495-424-43-75</a></p>
+          <p class="text_button">С-Пб <a href="tel:8(812)-424-43-74">8-812-424-43-74</a>
+          <br>Мск <a href="tel:8(495)-424-43-74">8-495-424-43-74</a></p>
         </div>
         <img class="form_arrow" src="@/assets/icon/form_arrow_icon.svg" width="81.02" height="40.69" alt="form_arrow_icon">
         <form class="pt-[35px] flex flex-col gap-y-[12px] site_color_1" netlify>

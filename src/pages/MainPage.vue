@@ -8,20 +8,20 @@
             Мы решаем задачу, улучшая бизнес процесс, а не <br>оборудование.</p>
         <UIButton variant="orange1" @click="showCommunicationFormDialog()">связаться с нами</UIButton> 
       </div>
-      <img class="ml-[27px]" src="@/assets/pageContentImage/MainPage_image.png" width="516" height="626" alt="main_page_image">
+      <img class="ml-[27px]" src="@/assets/pageContentImage/MainPage_image.svg" width="516" height="626" alt="main_page_image">
     </div>
     <div class="communication_section flex_content py-[16px] site_color_3_background mb-[48px]">
       <div>
         <h3 class="text-h3">Как мы можем помочь<br> вашему бизнесу?</h3> 
-        <UIButton variant="white" @click="showCommunicationFormDialog()">узнать варианты</UIButton>
+        <UIButton class="bg-inherit" variant="white" @click="showCommunicationFormDialog()">узнать варианты</UIButton>
       </div>
       <div class="communication_border">
         <h3 class="text-h3">Как стать<br> нашими партнёрами?</h3> 
-        <UIButton variant="white" @click="showCommunicationFormDialog({header: 'Давайте дружить!'})">свяжитесь с нами</UIButton>
+        <UIButton class="bg-inherit" variant="white" @click="showCommunicationFormDialog({header: 'Давайте дружить!'})">свяжитесь с нами</UIButton>
       </div>
       <div class="communication_border">
         <h3 class="text-h3">Как стать частью<br> команды?</h3>
-        <form action="Vacancies"><UIButton variant="white" href="Vacancies">Вакансии</UIButton></form>
+        <router-link to="Vacancies"><UIButton class="bg-inherit" variant="white" href="Vacancies">Вакансии</UIButton></router-link>
       </div>
     </div>
     <router-link to="PartnersInfo"><h2 class="text-h2 mb-[25px]">Нам уже доверяют</h2></router-link>

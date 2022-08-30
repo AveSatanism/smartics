@@ -7,7 +7,7 @@
           <p class="mb-[52px] text_1">Перечислить наименования известных программ с<br> узкой направленностью, которые заменяет штука<br> Егора<br> а вообще она делает это еще лучше</p>
           <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
-        <img class="h-[554px]" src="@/assets/pageContentImage/InfrastructureManagement_image.png" width="597" height="554" alt="InfrastructureManagement_image">
+        <img class="h-[554px]" src="@/assets/pageContentImage/InfrastructureManagement_image.svg" width="597" height="554" alt="InfrastructureManagement_image">
       </div>
       <div class="py-[20px] px-[30px] flex flex-col items-center site_color_2_background">
         <h2 class="text-h2 mb-[40px] max-w-[1161px] w-full py-[19px] text-center infrastructureManagement_border site_color_1_background">Управление инфраструктурой</h2>

@@ -9,7 +9,7 @@
       </div>
       <div class="flex flex-wrap gap-x-[100px] py-[8px]">
         <ul class="footer_list text_6 site_color_1">
-          <li class="text_7"><p>меню</p></li>
+          <li class="text_7"><p>МЕНЮ</p></li>
           <li><p><router-link to="DigitalTransformation">цифровая <br />трансформация</router-link></p></li>
           <li><p><router-link to="InfrastructureManagement">управление <br />инфраструктурой</router-link></p></li>
           <li><p><router-link to="AuditIT">аудит ит</router-link></p></li>
@@ -18,13 +18,13 @@
           <li><p><router-link to="IndustrySolutions">отраслевые решения</router-link></p></li>
         </ul>
         <ul class="footer_list text_6 site_color_1">
-          <li class="text_7"><p>информация</p></li>
+          <li class="text_7"><p>ИНФОРМАЦИЯ</p></li>
           <li><p><router-link to="#">для бизнеса</router-link></p></li>
           <li><p><router-link to="#">для партнёров</router-link></p></li>
           <li><p><router-link to="Vacancies">для соискателей</router-link></p></li>
         </ul>
         <div class="text_6 site_color_1">
-          <p class="mb-[13px] text_7">контакты</p>
+          <p class="mb-[13px] text_7">КОНТАКТЫ</p>
           <ul class="w-[167px] mb-[16px]">
             <li class="flex justify-between normal-case"><p>С-Пб</p><a href="tel:8(812)-424-43-74" class="site_color_2">8(812)-424-43-74</a></li>
             <li class="flex justify-between normal-case"><p>Москва</p><a href="tel:8(495)-424-43-74" class="site_color_2">8(495)-424-43-74</a></li>

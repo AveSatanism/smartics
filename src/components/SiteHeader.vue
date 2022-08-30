@@ -2,7 +2,7 @@
   <header class="site_color_7_background">
     <div class="site_header_container mx-auto flex justify-between flex-wrap gap-y-[20px]">
       <router-link to="/"><img src="@/assets/logo/primary.svg" width="203" height="47" alt="Logo"></router-link>
-      <div class="site_header_content w-[568px] flex flex-wrap justify-between items-center gap-y-[20px]">
+      <div class="site_header_content flex flex-wrap justify-between items-center gap-x-[52px] gap-y-[20px]">
         <div>
           <img src="@/assets/icon/phone.svg" width="19" height="19" alt="phone_logo">
           <ul class="site_header_numbers w-[171px] ml-[15px] text_8 site_color_1">
@@ -17,7 +17,6 @@
           </ul>
         </div>
         <div class="gap-[12px]">
-          <button class="cursor-pointer" onClick="window.location.href='https://www.skype.com/ru/';"><img src="@/assets/icon/Skype.svg" width="22.5" height="23.33" alt="skype_logo"></button>
           <button class="cursor-pointer" onClick="window.location.href='https://www.whatsapp.com';"><img src="@/assets/icon/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo"></button>
           <button class="cursor-pointer" onClick="window.location.href='https://web.telegram.org/z/';"><img src="@/assets/icon/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo"></button>
         </div>

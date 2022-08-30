@@ -11,7 +11,7 @@
           <p class="text_3">SMARTICS - ваш лучший друг и помощник. <br>Мы готовы дополнить вашего админа и помочь ему.</p>
           <UIButton variant="orange2" @click="showCommunicationFormDialog()">Хочу!</UIButton>
         </div>
-        <img class="h-[614px]" src="@/assets/pageContentImage/AuditIT_image.png" width="406" height="614" alt="AuditIT_image">
+        <img class="h-[614px]" src="@/assets/pageContentImage/AuditIT_image.svg" width="406" height="614" alt="AuditIT_image">
       </div>
       <section class="site_color_3 site_color_2_background">
         <h2 class="text-h2 py-[36px] text-center">Мы - команда таких же айти специалистов, мы готовы оказать любую <br>
