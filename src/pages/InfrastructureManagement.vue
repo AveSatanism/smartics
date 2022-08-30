@@ -47,7 +47,7 @@
           </UIPanel>
         </div>
       </div>
-      <div class="infrastructureManagement_background_bot h-[115px]"></div>
+      <div class="infrastructureManagement_background_bot h-[230px]"></div>
     </div>
   </div>
 </template>

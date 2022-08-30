@@ -31,7 +31,6 @@
           </ul>
           <a href="mailto:Help@smartics.ru">Help@smartics.ru</a>
           <div class="my-[16px] flex gap-[12px]">
-            <button class="cursor-pointer" onClick="window.location.href='https://www.skype.com/ru/';"><img src="@/assets/icon/Skype.svg" width="22.5" height="23.33" alt="skype_logo"/></button>
             <button class="cursor-pointer" onClick="window.location.href='https://www.whatsapp.com';"><img src="@/assets/icon/Watsapp.svg" width="22.5" height="23.33" alt="watsapp_logo"/></button>
             <button class="cursor-pointer" onClick="window.location.href='https://web.telegram.org/z/';"><img src="@/assets/icon/Telegram.svg" width="23.33" height="23.33" alt="telegram_logo"/></button>
           </div>

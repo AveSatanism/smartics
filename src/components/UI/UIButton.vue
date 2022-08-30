@@ -45,8 +45,9 @@ export default {
   width: 212px;
   height: 40px;
 }
-.button.button--white{
+.button.button--orange1:hover, .button.button--orange2:hover, .button.button--orange3:hover, .button.button--white{
   border: 1px solid var(--color-4);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--color-4);
 }
 .button.button--default, .button.button--orange1, .button.button--orange2, .button.button--orange3, .button.button--white:active{
@@ -73,7 +74,7 @@ export default {
   background: var(--color-1);
   color: var(--color-7);
 }
-.button.button--orange1:hover, .button.button--orange2:hover, .button.button--orange3:hover, .button.button--personalOffer:hover{
+.button.button--personalOffer:hover{
   border: 1px solid var(--color-4);
   background: var(--color-7);
   color: var(--color-4);

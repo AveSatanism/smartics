@@ -2,7 +2,7 @@
   <div id="DigitalTransformation">
     <div class="digitalTrans_background py-[7px] text_1">
       <div class="pt-[55px] min-h-[703px] flex justify-center items-start">
-        <img class="h-[429px] pt-[44px]" src="@/assets/pageContentImage/DigitalTransforrmation_image1.svg" width="572" height="429" alt="DigitalTransforrmation_image">
+        <img class="h-[429px] pt-[44px]" src="@/assets/pageContentImage/DigitalTransforrmation_image1.png" width="572" height="429" alt="DigitalTransforrmation_image">
         <div class="ml-[10px] mb-[30px] max-w-[603px] site_color_1 text-center flex flex-col items-center">
           <h1 class="text-h1 mb-[7px]">пора заставить технологии работать на вас!</h1>
           <p class="mb-[28px]">Пришло время освободить свой бизнес от<br> ламповых технологий.</p>
