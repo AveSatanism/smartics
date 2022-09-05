@@ -76,8 +76,8 @@ export default {
   filter: brightness(0) invert(1);
 }
 .splide__arrow {
-  width: 27px;
-  height: 27px;
+  width: 35px;
+  height: 35px;
   background-color: var(--color-2);
   opacity: 1;
   z-index: 0;

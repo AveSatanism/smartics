@@ -21,6 +21,7 @@
         <slot name="icon"></slot>
       </div>
     </div>
+    <div v-if="isActive" class="mb-[302px]"></div>
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
 <section class="software_slider_container flex justify-center mb-[67px]">
-<carousel-3d :controls-visible="true" :width="597" :height="398" :space="710" :inverseScaling="150" :perspective="0" :controlsWidth="27" :controlsHeight="27" :border="0" :count="3">
+<carousel-3d :controls-visible="true" :width="597" :height="398" :space="710" :inverseScaling="150" :perspective="0" :controlsWidth="35" :controlsHeight="35" :border="0" :count="3">
   <slide :index="0">
     <img class="h-[398px]" src="@/assets/SoftwareDevelopmentSlider/Slide_image1.png" alt="Slide_image1">
   </slide>
@@ -40,7 +40,7 @@ export default {
   filter: opacity(0.2);
 }
 .software_slider_container .carousel-3d-controls {
-  width: 95px !important;
+  width: 111px !important;
   margin: 0 !important;
   top: 92% !important;
   left: 44% !important;
@@ -54,8 +54,8 @@ export default {
   background-color: var(--color-2);
   border-radius: 50%;
   font-size: 39px !important;
-  height: 27px;
-  width: 27px;
+  height: 35px;
+  width: 35px;
 }
 .software_slider_container .prev {
   padding-right: 3px;

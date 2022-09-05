@@ -30,15 +30,15 @@
           <fieldset class="flex gap-x-[15px] calculator_button input_display text_8">
             <div>
               <p class="mb-[8px] text-center text_10">рабочее время</p>
-              <input type="radio" name="answer" id="answer1" @click="radios='true', calculationPrice()"><label for="answer1">ПН-вск</label>
+              <input type="radio" name="answer" id="answer1" @click="radios='7', calculationPrice()"><label for="answer1">ПН-вск</label>
             </div>
             <div>
               <p class="mb-[8px] text-center text_10">рабочее время</p>
-              <input type="radio" name="answer" id="answer2" @click="radios='false', calculationPrice()"><label for="answer2">ПН-пт</label>
+              <input type="radio" name="answer" id="answer2" @click="radios='5', calculationPrice()"><label for="answer2">ПН-пт</label>
             </div>
             <div>
               <p class="mb-[20.6px]"></p>
-              <input type="checkbox" id="answer3" v-model="checked" @click="allTime=!allTime, calculationPrice()"><label for="answer3">24/7</label>
+              <input type="radio" name="answer" id="answer3" @click="radios='7/24', calculationPrice()"><label for="answer3">24/7</label>
             </div>
           </fieldset>
           </div>
@@ -62,119 +62,122 @@
         </form>
         <img class="self-end" src="@/assets/pageContentImage/IT-outsoucing_calculator_image.svg" width="384" height="258" alt="IT-outsoucing_calculator_image">  
       </div>
-      <div class="h-[394px] grid grid-cols-3 min-h-[394px] px-[218px] pt-[59px] pb-[83px]">
+      <div class="min-h-[394px] px-[218px] pt-[59px] pb-[83px]">
+        <p class="mb-[39px] text-center text_8">Дополнительные опции, входящие в обслужвание</p>
+      <div class="grid grid-cols-3 gap-y-[11px]">
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Обслуживание стандартного офисного ПО', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Обслуживание стандартного офисного ПО</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Обслуживание стандартного офисного ПО</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Настройка и мониторинг сетевого оборудования', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Настройка и мониторинг сетевого оборудования</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Настройка и мониторинг сетевого оборудования</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'IT - инструменты для службы внутренней безопасности', 
           description: 'Безусловно, сплочённость команды профессионалов предопределяет высокую востребованность поэтапного и последовательного развития общества.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">IT - инструменты для службы внутренней безопасности</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">IT - инструменты для службы внутренней безопасности</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Поддержка мобильных рабочих мест', 
           description: 'В целом, конечно, базовый вектор развития требует определения и уточнения своевременного выполнения сверхзадачи. Имеется спорная точка зрения, гласящая примерно следующее: интерактивные прототипы и по сей день остаются уделом либералов, которые жаждут быть ограничены исключительно образом мышления.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Поддержка мобильных рабочих мест</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Поддержка мобильных рабочих мест</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Поддержка специфических серверных ПО', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Поддержка специфических серверных ПО</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Поддержка специфических серверных ПО</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Поддержка телефонии', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Поддержка телефонии</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Поддержка телефонии</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'обслуживание систем клиент банк', 
           description: 'В своём стремлении улучшить пользовательский опыт мы упускаем, что акционеры крупнейших компаний представлены в исключительно положительном свете. А ещё базовые сценарии поведения пользователей представлены в исключительно положительном свете.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Обслуживание систем клиент банк</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Обслуживание систем клиент банк</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Персональная настройка системы мониторинга состояния (Zabbix)', 
           description: 'Принимая во внимание показатели успешности, дальнейшее развитие различных форм деятельности в значительной степени обусловливает важность экспериментов, поражающих по своей масштабности и грандиозности. Господа, граница обучения кадров, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для модели развития.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Персональная настройка системы мониторинга состояния (Zabbix)</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Персональная настройка системы мониторинга состояния (Zabbix)</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Управление заупками', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Управление заупками</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Управление заупками</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Резервное копирование информации', 
           description: 'В своём стремлении улучшить пользовательский опыт мы упускаем, что акционеры крупнейших компаний представлены в исключительно положительном свете.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Резервное копирование информации</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Резервное копирование информации</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'По желанию клиента - настройка оповещения об инцидентах в Telergam', 
           description: 'Лишь элементы политического процесса обнародованы. Банальные, но неопровержимые выводы, а также явные признаки победы институционализации, превозмогая сложившуюся непростую экономическую ситуацию, обнародованы.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">По желанию клиента - настройка оповещения об инцидентах в Telergam</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">По желанию клиента - настройка оповещения об инцидентах в Telergam</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Удалённый доступ к рабочему столу', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Удалённый доступ к рабочему столу</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Удалённый доступ к рабочему столу</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Ввод в эксплуатацию новых ПК', 
           description: 'В своём стремлении улучшить пользовательский опыт мы упускаем, что акционеры крупнейших компаний представлены в исключительно положительном свете.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Ввод в эксплуатацию новых ПК</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Ввод в эксплуатацию новых ПК</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'АТС', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">АТС</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">АТС</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Консультация пользователей', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Консультация пользователей</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Консультация пользователей</p>
         </div>
         <div class="flex items-center gap-x-[6px]">
           <button @click="showDescriptionModalDialog(
           {header: 'Периферия', 
           description: 'Однозначно, сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями.'})">
           <img class="h-[13.09px]" src="@/assets/icon/DescriptionButton_icon.svg" width="12" height="13.09"></button>
-          <p class="text_9 w-[182px]">Периферия</p>
+          <p class="text_9 !text-[12px] !leading-[1.2] w-[182px]">Периферия</p>
         </div>
+      </div>
       </div>
     </div>
   </div>
@@ -198,17 +201,16 @@ export default {
       countComputers: 0,
       countServers: 0,
       priceSum: 0,
-      radios: 'false',
-      allTime: false
+      radios: '5'
     }
   },
   methods: {
     calculationPrice() {
       this.priceSum = this.countComputers * 1500 + this.countServers * 5000
-      if (this.radios === 'true') {
+      if (this.radios === '7') {
         this.priceSum *= 1.2
       }
-      if (this.allTime) {
+      if (this.radios === '7/24') {
         this.priceSum *= 2
       }
     },

@@ -1,7 +1,7 @@
 <template>
   <div id="IT-outsourcing">
     <div class="site_color_1">
-      <div class="flex flex-wrap mb-[104px] gap-x-[28.5px] justify-center">
+      <div class="flex flex-wrap mb-[37px] gap-x-[28.5px] justify-center">
         <div class="mt-[51px] max-w-[552px] flex flex-col gap-[26px]">
           <h1 class="text-h1">бывший админ<br> уронил сеть?<br> ПОШИФРОВАЛО?<br> “Я НАЖАЛА И ВСЁ<br> ИСЧЕЗЛО”?</h1>
           <p class="text_1">Бывает, но нас сложно удивить. 
@@ -68,7 +68,7 @@ export default {
 <style>
 .it_outsourcing_advantages{
   border: 2px solid var(--color-3);
-  filter: drop-shadow(0px 4px 8px rgba(0, 99, 210, 0.3));
+  box-shadow: 0px 4px 4px rgba(221, 236, 255, 0.5);
   border-radius: 15px;
 }
 .splite-border {
