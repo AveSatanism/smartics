@@ -11,14 +11,10 @@
           <br>Мск <a href="tel:8(495)-424-43-74">8-495-424-43-74</a></p>
         </div>
         <img class="form_arrow" src="@/assets/icon/form_arrow_icon.svg" width="81.02" height="40.69" alt="form_arrow_icon">
-        <form class="pt-[35px] flex flex-col gap-y-[12px] site_color_1" netlify>
-          <div>
-            <input class="w-[194px] h-[29px] p-[8px] rounded-[5px] text_10" type="text" name="name" placeholder="Контактное лицо*" required>
-          </div>
-          <div>
-            <input class="w-[194px] h-[29px] p-[8px] rounded-[5px] text_10" type="tel" name="tel" placeholder="Контактный телефон*" required>
-          </div>
-          <UIButton variant="submit">ОТПРАВИТЬ</UIButton> 
+        <form class="pt-[35px] flex flex-col gap-y-[12px] site_color_1">
+          <input class="w-[194px] h-[29px] p-[8px] rounded-[5px] text_10" type="text" name="name" placeholder="Контактное лицо*" required>
+          <input v-mask="mask" v-model="telephone" class="w-[194px] h-[29px] p-[8px] rounded-[5px] text_10" type="tel" name="tel" placeholder="Контактный телефон*" maxlength="16" required>
+          <UIButton :class="{ notActive: telephone.length != 16 }" variant="submit">ОТПРАВИТЬ</UIButton> 
         </form>
       </div>
     </div>
@@ -30,12 +26,22 @@
   import UIButton from './UI/UIButton.vue'
 
   export default {
-    components: {
-      UIButton
+  components: {
+    UIButton
+  },
+  data() {
+    return {
+      mask: ['+','7','(',/9/,/[0-9]/,/[0-9]/,')',/[0-9]/,/[0-9]/,/[0-9]/,'-',/[0-9]/,/[0-9]/,'-',/[0-9]/,/[0-9]/],
+      telephone: ''
     }
+  },
 }
 </script>
 <style>
+.notActive {
+  pointer-events: none;
+  filter: grayscale(1);
+}
 .form_arrow {
   position: relative;
   top: -47px;

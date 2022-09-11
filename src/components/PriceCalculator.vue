@@ -54,11 +54,11 @@
       <div :class="{ special_offer: countServers === 2 || countComputers === 20 }" class="hidden min-h-[289px] flex justify-center items-center gap-x-[94px] site_color_2_background">
         <form class="flex flex-col items-center gap-y-[16px] site_color_1" netlify>
           <p class="mb-[27px] text_1 text-center site_color_7">У вас более 20 компьютеров или 2 серверов? <br>Заполните форму и мы свяжемся с Вами</p>
-          <div class="calculator_form_input flex justify-center items-center">
-            <p class="calculator_form_placeholder text_6 absolute site_color_5">Контактный телефон</p>
-            <input class="w-[426px] h-[35px] p-[8px] rounded-[10px] text_10" type="tel" name="tel" required>
+          <div class="calculator_form_input flex justify-center items-center site_color_1">
+            <p class="calculator_form_placeholder w-[426px] h-[35px] py-[10px] text-center text_6 absolute site_color_5 rounded-[10px] site_color_7_background" :class="{ active: telephone != '' }">Контактный телефон</p>
+            <input v-mask="mask" v-model="telephone" class="calculator_form_input_text text-center w-[426px] h-[35px] p-[8px] rounded-[10px] text_4" type="tel" name="tel" minlength="16" maxlength="16" required>
           </div>
-          <UIButton variant="personalOffer">Получить персональное предложение</UIButton> 
+          <UIButton :class="{ notActive: telephone.length != 16 }" variant="personalOffer">Получить персональное предложение</UIButton> 
         </form>
         <img class="self-end" src="@/assets/pageContentImage/IT-outsoucing_calculator_image.svg" width="384" height="258" alt="IT-outsoucing_calculator_image">  
       </div>
@@ -198,6 +198,8 @@ export default {
   },
   data() {
     return {
+      mask: ['+','7','(',/9/,/[0-9]/,/[0-9]/,')',/[0-9]/,/[0-9]/,/[0-9]/,'-',/[0-9]/,/[0-9]/,'-',/[0-9]/,/[0-9]/],
+      telephone: '',
       countComputers: 0,
       countServers: 0,
       priceSum: 0,
@@ -225,8 +227,15 @@ export default {
 </script>
 
 <style>
-.calculator_form_input:focus-within .calculator_form_placeholder{
+.calculator_form_input:focus-within .calculator_form_placeholder, .active{
   display: none;
+}
+.calculator_form_input:focus-within .calculator_form_input_text, .active + .calculator_form_input_text{
+  background-color: var(--color-7);
+}
+.calculator_form_input_text {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
 }
 .calculator_button label {
   display: flex;
@@ -251,6 +260,10 @@ export default {
 .minCount, .maxCountComputers, .maxCountServers {
   pointer-events: none;
   filter: grayscale(0.6);
+}
+.notActive {
+  pointer-events: none;
+  filter: grayscale(1);
 }
 .special_offer {
   display: flex;

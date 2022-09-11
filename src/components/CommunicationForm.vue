@@ -9,8 +9,8 @@
         <img class="h-[34.51px]" src="@/assets/icon/communication_form_arrow_right.svg" width="42.59" height="19.69">
       </div>
       <form class="flex flex-col items-center gap-y-[12px] site_color_1" netlify>
-        <input class="w-[194px] h-[29px] p-[8px] rounded-[10px] text_10" type="tel" name="tel" placeholder="ТЕЛ.:" required>
-        <UIButton variant="letsGo">ПОЕХАЛИ!</UIButton> 
+        <input v-mask="mask" v-model="telephone" class="w-[194px] h-[29px] p-[8px] rounded-[10px] text_8" type="tel" name="tel" placeholder="ТЕЛ.:" minlength="16" maxlength="16" required>
+        <UIButton :class="{ notActive: telephone.length != 16 }" variant="letsGo">ПОЕХАЛИ!</UIButton> 
       </form>
     <p class="text_10 text-center">Нажимая на кнопку, вы даёте согласие на обработку персональных данных<br> и соглашаетесь с политикой конфиденциальности</p>
     </div>
@@ -33,6 +33,12 @@ export default {
   components: {
     UIButton
   },
+  data() {
+    return {
+      mask: ['+','7','(',/9/,/[0-9]/,/[0-9]/,')',/[0-9]/,/[0-9]/,/[0-9]/,'-',/[0-9]/,/[0-9]/,'-',/[0-9]/,/[0-9]/],
+      telephone: ''
+    }
+  },
   computed: {
     texts() {
       return defu(this.params, defaults)
@@ -48,5 +54,9 @@ export default {
   position: relative;
   margin: 0;
   border-radius: 50%;
+}
+.notActive {
+  pointer-events: none;
+  filter: grayscale(1);
 }
 </style>

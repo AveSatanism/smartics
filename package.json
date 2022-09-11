@@ -13,6 +13,7 @@
     "@vueuse/core": "^9.1.0",
     "core-js": "^3.8.3",
     "defu": "^6.0.0",
+    "v-mask": "^2.3.0",
     "vue": "^2.7.7",
     "vue-carousel-3d": "^1.0.1",
     "vue-promise-dialogs": "^2.0.0",
