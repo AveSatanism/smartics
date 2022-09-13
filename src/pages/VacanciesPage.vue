@@ -67,6 +67,7 @@ export default {
 
 .ps__rail-y {
   left: 0px !important;
+  opacity: 1 !important;
 }
 .vacancies_image {
   position: absolute;
