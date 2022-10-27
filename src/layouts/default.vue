@@ -2,7 +2,7 @@
 <template>
   <div>
     <SiteHeader />
-    <SiteNavigation v-if="size > 1024"/>
+    <component :is="headerComponent" />
     <slot />
     <SiteFooter />
   </div>
@@ -13,19 +13,22 @@ import SiteHeader from '../components/SiteHeader.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import { useWindowSize } from '@vueuse/core'
+import { computed } from 'vue'
 
 export default {
   components: {
     SiteHeader,
     SiteNavigation,
-    SiteFooter
+    SiteFooter,
   },
   setup() {
-  const { width } = useWindowSize()
-  return { size: width } 
-}
+    const { width } = useWindowSize()
+    const headerComponent = computed(() => {
+      return width.value > 1024 ? SiteNavigation : null
+    })
+    return { headerComponent }
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>
