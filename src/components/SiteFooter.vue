@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full site_color_6_background text-left">
+  <footer class="mt-auto w-full site_color_6_background text-left">
     <div class="footer_container flex flex-wrap justify-between mx-auto">
       <div>
         <router-link to="/"><img class="mb-[28px]" src="@/assets/logo/secondary.svg" width="180" height="50" alt="Footer_logo"/></router-link>

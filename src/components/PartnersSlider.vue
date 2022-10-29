@@ -1,5 +1,5 @@
 <template>
-<section class="flex justify-center mb-[67px]">
+<section class="flex justify-center mb-[86px]">
   <Splide :options="{ rewind: false, type: 'loop', perMove: 5, perPage: 5, pagination: false, width: '1100px',}" aria-label="Partners Images">
     <SplideSlide class="splide_position">
       <img src="@/assets/PartnersLogo/itmo_icon.png" width="126" height="96" alt="itmo_icon_image">

@@ -1,32 +1,42 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div>
-    <SiteHeader />
+  <div class="flex flex-col min-h-[100vh]">
     <component :is="headerComponent" />
+    <component :is="navigationComponent" />
     <slot />
-    <SiteFooter />
+    <component :is="footerComponent" />
   </div>
 </template>
 
 <script>
 import SiteHeader from '../components/SiteHeader.vue'
+import SiteHeaderMobile from '../components/componentsOfMobile/SiteHeaderMobile.vue'
 import SiteNavigation from '../components/SiteNavigation.vue'
 import SiteFooter from '../components/SiteFooter.vue'
-import { useWindowSize } from '@vueuse/core'
+import SiteFooterMobile from '../components/componentsOfMobile/SiteFooterMobile.vue'
+import { useIsPC } from '../components/isPC&isMobile.js'
 import { computed } from 'vue'
 
 export default {
   components: {
     SiteHeader,
+    SiteHeaderMobile,
     SiteNavigation,
     SiteFooter,
+    SiteFooterMobile
   },
   setup() {
-    const { width } = useWindowSize()
+    const isPC = useIsPC()
     const headerComponent = computed(() => {
-      return width.value > 1024 ? SiteNavigation : null
+      return isPC.value ? SiteHeader : SiteHeaderMobile
     })
-    return { headerComponent }
+    const navigationComponent = computed(() => {
+      return isPC.value ? SiteNavigation : null
+    })
+    const footerComponent = computed(() => {
+      return isPC.value ? SiteFooter : SiteFooterMobile
+    })
+    return { headerComponent, navigationComponent, footerComponent }
   },
 }
 </script>

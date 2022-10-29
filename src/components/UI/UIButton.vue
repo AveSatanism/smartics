@@ -74,12 +74,32 @@ export default {
   background: var(--color-1);
   color: var(--color-7);
 }
+.button.button--orange1-mobile {
+  width: 188px;
+  height: 33px;
+  background: var(--color-4);
+  color: var(--color-7);
+  font-size: 12px!important;
+  font-weight: 700!important;
+  line-height: 16.8px!important;
+  letter-spacing: 0.03!important;
+}
+.button.button--orange2-mobile {
+  width: 188px;
+  height: 33px;
+  border: 1px solid var(--color-4);
+  color: var(--color-4);
+  font-size: 12px!important;
+  font-weight: 700!important;
+  line-height: 16.8px!important;
+  letter-spacing: 0.03!important;
+}
 .button.button--personalOffer:hover{
   border: 1px solid var(--color-4);
   background: var(--color-7);
   color: var(--color-4);
 }
-.button.button--orange1:active, .button.button--orange2:active, .button.button--orange3:active, .button.button--submit:active, .button.button--personalOffer:active, .button.button--letsGo:active{
+.button.button--orange1:active, .button.button--orange2:active, .button.button--orange3:active, .button.button--submit:active, .button.button--personalOffer:active, .button.button--letsGo:active, .button.button--orange2-mobile:active{
   background: var(--color-4);
   color: var(--color-7);
 }
@@ -92,7 +112,13 @@ export default {
   background: var(--color-2);
   color: var(--color-7);
 }
-.button.button--profile:active {
+.button.button--profile-orange {
+  width: 163px;
+  height: 31px;
+  background: var(--color-4);
+  color: var(--color-7);
+}
+.button.button--profile:active, .button.button--orange1-mobile:active {
   background: var(--color-1);
 }
 .button.button--submit {

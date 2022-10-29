@@ -39,6 +39,9 @@ body {
 .site_color_5 {
   color: var(--color-5);
 }
+.site_color_5_background {
+  background-color: var(--color-5);
+}
 
 .site_color_6 {
   color: var(--color-6);

@@ -1,5 +1,6 @@
 <template>
-  <div class="text-center site_color_1 mb-[86px]">
+  <div class="text-center site_color_1">
+  <div v-if="isPC">
     <div class="min-h-[642px] flex_content">
       <div class="main_title text_1">
         <h1 class="text-h1">мы точно знаем, <br>что нужно вашему <br>бизнесу</h1>
@@ -28,20 +29,46 @@
     <PartnersSlider />
     <PoliticsApply />
   </div>
+  <div v-if="!isPC" class="mainPage_background flex flex-col items-center">
+    <img class="mb-[21px]" src="@/assets/pageContentImage/MainPage_image_mobile.svg" width="231" height="279" alt="main_page_image">
+    <h2 class="mb-[15px] text-h2">мы точно знаем, <br>что нужно вашему <br>бизнесу</h2>
+    <p class="mb-[21px] text_6 !normal-case">Мы - SMARTICS FAMILY - разработчики, <br>поставщики,<br>
+      интеграторы, помощники в решении ваших IT проблем.<br>
+      Мы решаем задачу, улучшая бизнес процесс, а не оборудование.</p>
+    <UIButton variant="orange1-mobile" class="mb-[61px]">связаться с нами</UIButton> 
+    <div class="mb-[14px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
+      <p class="text_button site_color_1 mb-[10px]">Как мы можем помочь <br> вашему бизнесу?</p>
+      <UIButton variant="orange2-mobile">узнать варианты</UIButton>
+    </div>
+    <div class="mb-[14px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
+      <p class="text_button site_color_1 mb-[10px]">Как стать <br> нашими партнёрами?</p>
+      <UIButton variant="orange2-mobile">связаться с нами</UIButton>
+    </div>
+    <div class="mb-[54px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
+      <p class="text_button site_color_1 mb-[10px]">Как стать частью <br>команды?</p>
+      <UIButton variant="orange2-mobile">наши вакансии</UIButton>
+    </div>
+    <p class="mb-[7px] text_5 site_color_1">Нам уже доверяют</p>
+    <PartnersSliderMobile class="mb-[59px]"/>
+  </div>
+  </div>
 </template>
 
 <script>
 import PartnersSlider from '../components/PartnersSlider.vue'
+import PartnersSliderMobile from '../components/componentsOfMobile/PartnersSliderMobile.vue'
 import PoliticsApply from '../components/PoliticsApply.vue'
 import UIButton from '../components/UI/UIButton.vue'
 import CommunicationForm from '@/components/CommunicationForm.vue'
 import { createPromiseDialog } from "vue-promise-dialogs";
+import { useIsPC } from '../components/isPC&isMobile.js'
 
 const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 export default {
   components: {
     UIButton,
     PartnersSlider,
+    PartnersSliderMobile,
     PoliticsApply
   },
   methods: {
@@ -49,10 +76,19 @@ export default {
       CommunicationFormDialog(params);
     },
   },
+  setup() {
+  const isPC = useIsPC()
+  return { isPC }
+  },
 }
 </script>
 
 <style>
+.mainPage_background {
+  background-image: url("@/assets/pageContentImage/MainPage_wave_mobile.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .main_title :not(button){
   margin-bottom: 30px;
 }
