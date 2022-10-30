@@ -48,7 +48,7 @@
       <p class="text_button site_color_1 mb-[10px]">Как стать частью <br>команды?</p>
       <UIButton variant="orange2-mobile">наши вакансии</UIButton>
     </div>
-    <p class="mb-[7px] text_5 site_color_1">Нам уже доверяют</p>
+    <router-link to="PartnersInfo"><p class="mb-[7px] text_5 site_color_1">Нам уже доверяют</p></router-link>
     <PartnersSliderMobile class="mb-[59px]"/>
   </div>
   </div>
