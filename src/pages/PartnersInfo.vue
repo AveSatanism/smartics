@@ -35,11 +35,11 @@
           <img src="@/assets/PartnersLogo/PrimeLogistics_icon.png" width="83" height="26" alt="PrimeLogistics_icon_image">
           <img src="@/assets/PartnersLogo/ARSKA_icon.png" width="74" height="25" alt="ARSKA_icon_image">
           <img src="@/assets/PartnersLogo/HitechCeramics_icon.png" width="65" height="22" alt="HitechCeramics_icon_image">
+          <img src="@/assets/PartnersLogo/Hotel365_icon.png" width="46" height="36" alt="Hotel365_icon_image">
           <img src="@/assets/PartnersLogo/Polygraph_icon.png" width="68" height="17" alt="Polygraph_icon_image">
           <img src="@/assets/PartnersLogo/Puratrans_icon.png" width="52" height="37" alt="Puratrans_icon_image">
-          <img src="@/assets/PartnersLogo/HotelRK_icon.png" width="53" height="53" alt="HotelRK_icon_image">
           <img src="@/assets/PartnersLogo/PartnersLogo_icon.png" width="28" height="27" alt="PartnersLogo_icon_image">
-          <img src="@/assets/PartnersLogo/Hotel365_icon.png" width="46" height="36" alt="Hotel365_icon_image">
+          <img src="@/assets/PartnersLogo/HotelRK_icon.png" width="53" height="53" alt="HotelRK_icon_image">
         </div>
       </div>
   </div>

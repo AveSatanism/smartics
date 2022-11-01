@@ -31,7 +31,7 @@
   </div>
   <div v-if="!isPC" class="mainPage_background flex flex-col items-center">
     <img class="mb-[21px]" src="@/assets/pageContentImage/MainPage_image_mobile.svg" width="231" height="279" alt="main_page_image">
-    <h2 class="mb-[15px] text-h2">мы точно знаем, <br>что нужно вашему <br>бизнесу</h2>
+    <h3 class="mb-[15px] text-h3-mobile">мы точно знаем, <br>что нужно вашему <br>бизнесу</h3>
     <p class="mb-[21px] text_6 !normal-case">Мы - SMARTICS FAMILY - разработчики, <br>поставщики,<br>
       интеграторы, помощники в решении ваших IT проблем.<br>
       Мы решаем задачу, улучшая бизнес процесс, а не оборудование.</p>
