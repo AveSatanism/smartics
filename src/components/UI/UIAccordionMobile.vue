@@ -1,19 +1,22 @@
 <template>
   <div class="flex justify-center">
-    <div class="flex flex-col w-[1126px] accordion_border" :class="{ active: isActive }">
-      <button class="flex items-center py-[20px] px-[24px] gap-x-[16px]" :class="{ active: isActive }" @click="toggleOpen()">
+    <div class="accordion_border_mobile flex flex-col justify-center w-[314px] min-h-[86px]">
+      <button class="flex items-center py-[16px] px-[24px]" :class="{ active: isActive }" @click="toggleOpen()">
         <div class="transition-transform" :class="{ 'rotate-180': isActive, accordion_filter: isActive }">
-          <img src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
+          <img class="!h-[14px] max-w-[23px]" src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
         </div>
         <div class="text-h2">
           <slot name="number"></slot>
         </div>
-        <div class="text-h3">
+        <div class="text_button w-[188px]">
           <slot name="title"></slot>
+        </div>
+        <div>
+          <slot name="icon"></slot>
         </div>
       </button>
       <div v-if="isActive"
-        class="accordion_description site_color_3_background text_1 p-[20px] mx-[40px] mb-[20px] rounded-[10px]">
+        class="site_color_3_background text_6 py-[24px] px-[20px] mx-[21.5px] mb-[16px] rounded-[10px]">
         <slot name="description"></slot>
       </div>
     </div>
@@ -49,7 +52,7 @@ export default {
 };
 </script>
 <style>
-.accordion_border {
+.accordion_border_mobile {
   background: var(--color-7);
   border: 1px solid rgba(221, 236, 255, 0.7);
   box-shadow: 0px 4px 4px rgba(221, 236, 255, 0.5);

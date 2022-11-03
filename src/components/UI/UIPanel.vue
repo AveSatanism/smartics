@@ -68,7 +68,7 @@ export default {
   methods: {
     toggleActive() {
       if (this.activeTab === this.tabName) {
-        this.activeTab = null
+        this.activeTab = ''
       } else {
         this.activeTab = this.tabName
       }
