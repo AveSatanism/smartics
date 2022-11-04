@@ -16,7 +16,7 @@
         </div>
       </button>
       <div v-if="isActive"
-        class="site_color_3_background text_6 py-[24px] px-[20px] mx-[21.5px] mb-[16px] rounded-[10px]">
+        class="site_color_3_background text_6 !normal-case text-left py-[24px] px-[20px] mx-[21.5px] mb-[16px] rounded-[10px]">
         <slot name="description"></slot>
       </div>
     </div>
