@@ -70,7 +70,7 @@ const routes = [
       }
     },
     {
-      path: "/Vacanci/:id",
+      path: "/Vacanci:id",
       component: {
         render: (h) => h(VacanciPage1),
       },
