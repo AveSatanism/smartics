@@ -1,6 +1,6 @@
 <template>
   <div id="SoftwareDevelopment">
-    <div class="site_color_1 soft_dev_background">
+    <div v-if="isPC" class="site_color_1 soft_dev_background">
       <div class="flex flex-wrap mb-[87px] gap-x-[28.5px] justify-center">
         <div class="mt-[51px] max-w-[552px] flex flex-col gap-[26px]">
           <h1 class="text-h1">Разработка ПО</h1>
@@ -52,14 +52,52 @@
         <SofwareSlider />
       </div>
     </div>
+    <div v-if="!isPC" class="soft_dev_background_mobile flex flex-col items-center text-center site_color_1">
+      <img class="mb-[9px] h-[280px]" src="@/assets/pageContentImage/SoftwareDevelopment_image.svg" width="313" height="280" alt="SoftwareDevelopment_image">
+      <h3 class="mb-[6px] text-h3-mobile">Разработка ПО</h3>
+      <p class="mb-[5px] text_button">Быстро. Качественно.<br> С понятным ценообразованием.</p>
+      <p class="mb-[30px] text_6 !normal-case !tracking-normal">У вас есть задача? У нас уже есть решения!<br>
+      Большинство проблем не уникальны (!!!), мы<br> подобрали лучшие способы их решения</p>
+      <UIButton class="mb-[85px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton>
+      <p class="mb-[20px] text_button">Мы готовы осуществить:</p>
+      <div class="mb-[82px] flex flex-col gap-y-[10px]">
+        <UIAccordionMobile tab-name="accordion1">
+          <template #number><p>01.</p></template>
+          <template #title><p class="text-left text-[12px]">Составление технического задания</p></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordionMobile>
+        <UIAccordionMobile tab-name="accordion2">
+          <template #number><p>02.</p></template>
+          <template #title><p class="text-left text-[12px]">Проектирование и разработка архитектуры</p></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordionMobile>
+        <UIAccordionMobile tab-name="accordion3">
+          <template #number><p>03.</p></template>
+          <template #title><p class="text-left text-[12px]">Написание программного кода и прототипирование</p></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordionMobile>
+        <UIAccordionMobile tab-name="accordion4">
+          <template #number><p>04.</p></template>
+          <template #title><p class="text-left text-[12px]">Интеграция в действующие системы</p></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordionMobile>
+        <UIAccordionMobile tab-name="accordion5">
+          <template #number><p>05.</p></template>
+          <template #title><p class="text-left text-[12px]">Обслуживание и сопровождение ПО, его доработки</p></template>
+          <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
+        </UIAccordionMobile>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import UIButton from '../components/UI/UIButton.vue'
 import UIAccordion from '../components/UI/UIAccordion.vue'
+import UIAccordionMobile from '../components/UI/UIAccordionMobile.vue'
 import SofwareSlider from '../components/SofwareSlider.vue'
 import CommunicationForm from '@/components/CommunicationForm.vue'
-import { createPromiseDialog } from "vue-promise-dialogs";
+import { createPromiseDialog } from "vue-promise-dialogs"
+import { useIsPC } from '../components/isPC&isMobile.js'
 
 const CommunicationFormDialog = createPromiseDialog(CommunicationForm);
 
@@ -67,6 +105,7 @@ export default {
   components: {
     UIButton,
     UIAccordion,
+    UIAccordionMobile,
     SofwareSlider,
   },
   methods: {
@@ -74,11 +113,20 @@ export default {
       CommunicationFormDialog(params);
     },
   },
+  setup() {
+    const isPC = useIsPC()
+    return { isPC }
+  },
 }
 </script>
 <style>
 .soft_dev_background {
   background-image: url("@/assets/pageContentImage/SoftwareDevelopment_wave.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.soft_dev_background_mobile {
+  background-image: url("@/assets/pageContentImage/SoftwareDevelopment_wave_mobile.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

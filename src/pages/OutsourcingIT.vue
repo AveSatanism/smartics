@@ -103,7 +103,7 @@ export default {
   background-repeat: no-repeat;
 }
 .it_outsourcing_advantages_mobile{
-  background: var(--color7);
+  background: var(--color-7);
   box-shadow: -4px -2px 15px rgba(236, 244, 255, 0.9), 4px 4px 20px rgba(236, 244, 255, 0.9);
   border-radius: 15px;
 }
