@@ -58,7 +58,7 @@
       <p class="mb-[5px] text_button">Быстро. Качественно.<br> С понятным ценообразованием.</p>
       <p class="mb-[30px] text_6 !normal-case !tracking-normal">У вас есть задача? У нас уже есть решения!<br>
       Большинство проблем не уникальны (!!!), мы<br> подобрали лучшие способы их решения</p>
-      <UIButton class="mb-[85px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton>
+      <router-link to="ContactsMobile"><UIButton class="mb-[85px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <p class="mb-[20px] text_button">Мы готовы осуществить:</p>
       <div class="mb-[82px] flex flex-col gap-y-[10px]">
         <UIAccordionMobile tab-name="accordion1">

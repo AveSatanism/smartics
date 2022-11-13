@@ -35,18 +35,18 @@
     <p class="mb-[21px] text_6 !normal-case">Мы - SMARTICS FAMILY - разработчики, <br>поставщики,<br>
       интеграторы, помощники в решении ваших IT проблем.<br>
       Мы решаем задачу, улучшая бизнес процесс, а не оборудование.</p>
-    <UIButton variant="orange1-mobile" class="mb-[61px]">связаться с нами</UIButton> 
+    <router-link to="ContactsMobile"><UIButton variant="orange1-mobile" class="mb-[61px]">связаться с нами</UIButton></router-link> 
     <div class="mb-[14px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
       <p class="text_button site_color_1 mb-[10px]">Как мы можем помочь <br> вашему бизнесу?</p>
-      <UIButton variant="orange2-mobile">узнать варианты</UIButton>
+      <router-link to="ContactsMobile"><UIButton variant="orange2-mobile">узнать варианты</UIButton></router-link>
     </div>
     <div class="mb-[14px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
       <p class="text_button site_color_1 mb-[10px]">Как стать <br> нашими партнёрами?</p>
-      <UIButton variant="orange2-mobile">связаться с нами</UIButton>
+      <router-link to="ContactsMobile"><UIButton variant="orange2-mobile">связаться с нами</UIButton></router-link>
     </div>
     <div class="mb-[54px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
       <p class="text_button site_color_1 mb-[10px]">Как стать частью <br>команды?</p>
-      <UIButton variant="orange2-mobile">наши вакансии</UIButton>
+      <router-link to="Vacancies"><UIButton variant="orange2-mobile">наши вакансии</UIButton></router-link>
     </div>
     <router-link to="PartnersInfo"><p class="mb-[7px] text_5 site_color_1">Нам уже доверяют</p></router-link>
     <PartnersSliderMobile class="mb-[59px]"/>

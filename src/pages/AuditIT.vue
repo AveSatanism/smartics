@@ -42,7 +42,7 @@
         <p class="text_button py-[15px] text-center">Мы - команда таких же айти<br> специалистов и готовы оказать<br> любую
         поддержку своим <br>коллегам.</p>
       </section>
-      <UIButton class="mb-[46px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton>
+      <router-link to="ContactsMobile"><UIButton class="mb-[46px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <p class="mb-[19px] text_button">Мы готовы оказать поддержку<br> существующему IT отделу по<br> ряду пунктов:</p>
       <div class="w-[315px]">
       <ul class="audit_list_mobile text_6 !normal-case">

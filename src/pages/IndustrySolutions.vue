@@ -88,7 +88,7 @@
       <h3 class="mb-[15px] text-h3-mobile">Отраслевые решения</h3>
       <p class="mb-[30px] text_6 !normal-case !tracking-normal">У вас есть задача? У нас уже есть решения!<br>
       Большинство проблем не уникальны (!!!), мы<br> подобрали лучшие способы их решения</p>
-      <UIButton class="mb-[104px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton>
+      <router-link to="ContactsMobile"><UIButton class="mb-[104px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <div class="solutions_accordion_mobile mb-[57px] flex flex-col items-center gap-y-[10px] w-[315px]">  
         <UIAccordionMobile tab-name="panel1">
           <template #title><p>Медицинские организации</p></template>

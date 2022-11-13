@@ -53,7 +53,7 @@
       <img class="mb-[24px]" src="@/assets/pageContentImage/InfrastructureManagement_image_mobile.svg" width="313" height="234" alt="InfrastructureManagement_image">
       <h3 class="text-h3-mobile mb-[12px]">управление<br> инфраструктурой</h3>
       <p class="mb-[24px] text_6 !normal-case">Перечислить наименования известных<br> программ с узкой направленностью, которые<br> заменяет штука Егора<br> а вообще она делает это еще лучше</p>
-      <UIButton class="mb-[38px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton>
+      <router-link to="ContactsMobile"><UIButton class="mb-[38px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <div class="pt-[30px] px-[30px] pb-[65px] w-full site_color_3_background">
         <p class="mb-[26px] text_button">Управление инфраструктурой<br> включает:</p>
         <div class="flex flex-col gap-y-[15px]">

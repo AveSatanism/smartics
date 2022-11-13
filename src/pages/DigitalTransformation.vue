@@ -44,7 +44,7 @@
           <li><p>•</p><p>освобождение от непрофильных IT задач</p></li>
         </ul>
       </div>
-      <UIButton class="mb-[44px]" variant="orange1-mobile">связаться с нами</UIButton>
+      <router-link to="ContactsMobile"><UIButton class="mb-[44px]" variant="orange1-mobile">связаться с нами</UIButton></router-link>
       <div class="mb-[30px] h-[92px] flex items-center justify-center w-full site_color_3_background">
         <p class="text_button site_color_1">Ваши шаги к эффективному<br> бизнесу в рамках цифровой<br> трансфорации</p>
         <img class="digitalTransformation_arrow mb-[29px]" src="@/assets/pageContentImage/DigitalTransformation_arrow_mobile.svg" width="43.3" height="25.5" alt="DigitalTransforrmation_image">

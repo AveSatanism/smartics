@@ -133,7 +133,7 @@
           <li><span>•</span> Профессиональное обучение и сертификация за счёт компании;</li>
         </ul>
       </div>
-      <UIButton variant="orange1-mobile" @click="showCommunicationFormDialog()">связаться с нами</UIButton>
+      <router-link to="ContactsMobile"><UIButton variant="orange1-mobile" @click="showCommunicationFormDialog()">связаться с нами</UIButton></router-link>
     </div>
   </div>
 </template>

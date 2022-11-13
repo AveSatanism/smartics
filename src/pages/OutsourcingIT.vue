@@ -49,7 +49,7 @@
       <p class="mb-[15px] text_6 !normal-case">Бывает, но нас сложно удивить.<br> 
         Группа компаний СМАРТИКС на протяжении 15<br> лет
          осуществляет техническую поддержку<br> компаний самых разных отраслевых<br> направлений</p>
-      <UIButton class="mb-[58px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton>
+      <router-link to="ContactsMobile"><UIButton class="mb-[58px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <div class="mb-[33px] pt-[25px] px-[31px] pb-[36px] it_outsourcing_advantages_mobile w-[291px] text_6 !normal-case">
         <p class="mb-[24px] text_button site_color_4">Наши преимущества:</p>
         <div class="mb-[5px] flex gap-x-[11px]"><img src="@/assets/icon/Education_card_icon.svg" width="19" height="19" alt="education_icon">
