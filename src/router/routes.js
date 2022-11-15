@@ -14,6 +14,7 @@ const OutsourcingIT = () => import("@/pages/OutsourcingIT.vue")
 const SoftwareDevelopment = () => import("@/pages/SoftwareDevelopment.vue")
 const IndustrySolutions = () => import("@/pages/IndustrySolutions.vue")
 const ContactsMobile = () => import("@/pages/ContactsMobile.vue")
+const TechnicalWorks = () => import("@/pages/TechnicalWorks.vue")
 
 const routes = [
     {
@@ -128,6 +129,15 @@ const routes = [
       path: "/ContactsMobile",
       component: {
         render: (h) => h(ContactsMobile),
+      },
+      meta: {
+        layout: DefaultLayout
+      }
+    },
+    {
+      path: "/TechnicalWorks",
+      component: {
+        render: (h) => h(TechnicalWorks),
       },
       meta: {
         layout: DefaultLayout

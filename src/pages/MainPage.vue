@@ -4,9 +4,9 @@
     <div class="min-h-[642px] flex_content">
       <div class="main_title text_1">
         <h1 class="text-h1">мы точно знаем, <br>что нужно вашему <br>бизнесу</h1>
-        <p>Мы - SMARTICS FAMILY - разработчики, поставщики,<br>
-           интеграторы, помощники в решении ваших IT проблем.<br>
-            Мы решаем задачу, улучшая бизнес процесс, а не <br>оборудование.</p>
+        <p>Мы - SMARTICS TEAM - разработчики, поставщики,<br>
+        интеграторы, помощники в решении ваших IT проблем.<br>
+        У вас есть задача - SMARTICS - ваше решение.</p>
         <UIButton variant="orange1" @click="showCommunicationFormDialog()">связаться с нами</UIButton> 
       </div>
       <img class="ml-[27px]" src="@/assets/pageContentImage/MainPage_image.svg" width="516" height="626" alt="main_page_image">
@@ -32,9 +32,9 @@
   <div v-if="!isPC" class="mainPage_background flex flex-col items-center">
     <img class="mb-[21px]" src="@/assets/pageContentImage/MainPage_image_mobile.svg" width="231" height="279" alt="main_page_image">
     <h3 class="mb-[15px] text-h3-mobile">мы точно знаем, <br>что нужно вашему <br>бизнесу</h3>
-    <p class="mb-[21px] text_6 !normal-case">Мы - SMARTICS FAMILY - разработчики, <br>поставщики,<br>
-      интеграторы, помощники в решении ваших IT проблем.<br>
-      Мы решаем задачу, улучшая бизнес процесс, а не оборудование.</p>
+    <p class="mb-[21px] text_6 !normal-case">Мы - SMARTICS TEAM - разработчики,<br> поставщики,<br>
+    интеграторы, помощники в решении ваших IT<br> проблем.<br>
+    У вас есть задача - SMARTICS - ваше решение.</p>
     <router-link to="ContactsMobile"><UIButton variant="orange1-mobile" class="mb-[61px]">связаться с нами</UIButton></router-link> 
     <div class="mb-[14px] w-full flex flex-col justify-center items-center h-[139px] site_color_6_background">
       <p class="text_button site_color_1 mb-[10px]">Как мы можем помочь <br> вашему бизнесу?</p>

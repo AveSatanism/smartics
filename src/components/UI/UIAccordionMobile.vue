@@ -1,9 +1,12 @@
 <template>
   <div class="flex justify-center">
     <div class="accordion_border_mobile flex flex-col justify-center w-[314px]">
-      <button class="flex items-center py-[16px] px-[24px]" :class="{ active: isActive }" @click="toggleOpen()">
-        <div class="transition-transform background_arrow_mobile" :class="{ 'rotate-180': isActive, accordion_filter: isActive }">
+      <button class="flex items-center py-[16px] px-[24px]" :class="[arrowVariantClass, { active: isActive }]" v-on="$listeners" @click="toggleOpen()">
+        <div class="accordion_arrow accordion_arrow_orange transition-transform background_arrow_mobile" :class="{ 'rotate-180': isActive, accordion_filter: isActive }">
           <img class="!h-[14px] max-w-[23px]" src="@/assets/icon/accordion_arrow_open_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
+        </div>
+        <div class="accordion_arrow accordion_arrow_blue transition-transform background_arrow_mobile" :class="{ 'rotate-180': isActive, accordion_filter: isActive }">
+          <img class="!h-[14px] max-w-[23px]" src="@/assets/icon/accordion_arrow_open_blue_icon.svg" width="23" height="14" alt="accordion_arrow_open_icon">
         </div>
         <div class="margin_number text_3">
           <slot name="number"></slot>
@@ -28,7 +31,11 @@ export default {
     tabName: {
       type: String,
       default: ''
-    }
+    },
+    variant: {
+      type: String,
+      default: 'default',
+    },
   },
   data() {
     return {
@@ -38,7 +45,10 @@ export default {
   computed: {
     isActive() {
       return this.activeTab === this.tabName
-    }
+    },
+    arrowVariantClass() {
+      return 'arrow--' + this.variant
+    }    
   },
   methods: {
     toggleOpen() {
@@ -52,6 +62,12 @@ export default {
 };
 </script>
 <style>
+.accordion_arrow {
+  display: none;
+}
+.arrow--orange .accordion_arrow_orange, .arrow--blue .accordion_arrow_blue{
+  display: inline !important;
+}
 .accordion_border_mobile {
   background: var(--color-7);
   border: 1px solid rgba(221, 236, 255, 0.7);

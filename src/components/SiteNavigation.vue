@@ -5,7 +5,7 @@
       <router-link to="InfrastructureManagement"><li><p>управление<br>инфраструктурой</p></li></router-link>
       <router-link to="AuditIT"><li><p>аудит IT<br>и консалтинг</p></li></router-link>
       <router-link to="IT-outsourcing"><li><p>IT - аутсорсинг<br>и техподдержка</p></li></router-link>
-      <router-link to="SoftwareDevelopment"><li><p>разработка по</p></li></router-link>
+      <router-link to="TechnicalWorks"><li><p>разработка по</p></li></router-link>
       <router-link to="IndustrySolutions"><li><p>отраслевые<br>решения</p></li></router-link>
     </ul>
   </nav>

@@ -57,37 +57,37 @@
       <div class="pt-[30px] px-[30px] pb-[65px] w-full site_color_3_background">
         <p class="mb-[26px] text_button">Управление инфраструктурой<br> включает:</p>
         <div class="flex flex-col gap-y-[15px]">
-          <UIAccordionMobile tab-name="accordion1">
+          <UIAccordionMobile tab-name="accordion1" variant="blue">
             <template #title><p>Облачная инфраструктура</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/cloudInfrastructure_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordionMobile>
-          <UIAccordionMobile tab-name="accordion2">
+          <UIAccordionMobile tab-name="accordion2" variant="blue">
             <template #title><p>Системы <br>безопасности</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/securitySystems_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordionMobile>
-          <UIAccordionMobile tab-name="accordion3">
+          <UIAccordionMobile tab-name="accordion3" variant="blue">
             <template #title><p>ЦОД</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/COD_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordionMobile>
-          <UIAccordionMobile tab-name="accordion4">
+          <UIAccordionMobile tab-name="accordion4" variant="blue">
             <template #title><p>Телеком</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/telecom_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordionMobile>
-          <UIAccordionMobile tab-name="accordion5">
+          <UIAccordionMobile tab-name="accordion5" variant="blue">
             <template #title><p>Физическая безопастность</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/physicalSecurity_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordionMobile>
-          <UIAccordionMobile tab-name="accordion6">
+          <UIAccordionMobile tab-name="accordion6" variant="blue">
             <template #title><p>Сети</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/networks_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
           </UIAccordionMobile>
-          <UIAccordionMobile tab-name="accordion7">
+          <UIAccordionMobile tab-name="accordion7" variant="blue">
             <template #title><p>Мультимедиа</p></template>
             <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/InfrastructureManagement_image/multimedia_icon.svg"></template>
             <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>

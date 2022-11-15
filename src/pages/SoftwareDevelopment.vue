@@ -61,27 +61,27 @@
       <router-link to="ContactsMobile"><UIButton class="mb-[85px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <p class="mb-[20px] text_button">Мы готовы осуществить:</p>
       <div class="mb-[82px] flex flex-col gap-y-[10px]">
-        <UIAccordionMobile tab-name="accordion1">
+        <UIAccordionMobile tab-name="accordion1" variant="orange">
           <template #number><p>01.</p></template>
           <template #title><p class="text-left text-[12px]">Составление технического задания</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="accordion2">
+        <UIAccordionMobile tab-name="accordion2" variant="orange">
           <template #number><p>02.</p></template>
           <template #title><p class="text-left text-[12px]">Проектирование и разработка архитектуры</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="accordion3">
+        <UIAccordionMobile tab-name="accordion3" variant="orange">
           <template #number><p>03.</p></template>
           <template #title><p class="text-left text-[12px]">Написание программного кода и прототипирование</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="accordion4">
+        <UIAccordionMobile tab-name="accordion4" variant="orange">
           <template #number><p>04.</p></template>
           <template #title><p class="text-left text-[12px]">Интеграция в действующие системы</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="accordion5">
+        <UIAccordionMobile tab-name="accordion5" variant="orange">
           <template #number><p>05.</p></template>
           <template #title><p class="text-left text-[12px]">Обслуживание и сопровождение ПО, его доработки</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>

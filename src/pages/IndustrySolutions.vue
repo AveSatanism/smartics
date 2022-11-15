@@ -90,47 +90,47 @@
       Большинство проблем не уникальны (!!!), мы<br> подобрали лучшие способы их решения</p>
       <router-link to="ContactsMobile"><UIButton class="mb-[104px]" variant="orange1-mobile" @click="showCommunicationFormDialog()">Хочу!</UIButton></router-link>
       <div class="solutions_accordion_mobile mb-[57px] flex flex-col items-center gap-y-[10px] w-[315px]">  
-        <UIAccordionMobile tab-name="panel1">
+        <UIAccordionMobile tab-name="panel1" variant="orange">
           <template #title><p>Медицинские организации</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/medical_organizations_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel2">
+        <UIAccordionMobile tab-name="panel2" variant="orange">
           <template #title><p>Перевозки</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/transportation_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel3">
+        <UIAccordionMobile tab-name="panel3" variant="orange">
           <template #title><p>Гостиничное<br> дело</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/hotel_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel4">
+        <UIAccordionMobile tab-name="panel4" variant="orange">
           <template #title><p>Учебные<br> заведения</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/study_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel5">
+        <UIAccordionMobile tab-name="panel5" variant="orange">
           <template #title><p>Производства</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/productions_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel6">
+        <UIAccordionMobile tab-name="panel6" variant="orange">
           <template #title><p>Гос сектор</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/public_sector_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel7">
+        <UIAccordionMobile tab-name="panel7" variant="orange">
           <template #title><p>Крупный бизнес</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/big_business_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel8">
+        <UIAccordionMobile tab-name="panel8" variant="orange">
           <template #title><p>Малый и<br> средний бизнес</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/small_busines.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel9">
+        <UIAccordionMobile tab-name="panel9" variant="orange">
           <template #title><p>... или создадим новое!</p></template>
           <template #icon><img class="h-[54px] max-w-[53px]" src="@/assets/IndustrySolutions_icon/other_icon.svg"></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
@@ -138,11 +138,11 @@
       </div>
       <p class="mb-[20px] text_button site_color_2">И для всех направления мы<br> готовы:</p>
       <div class="mb-[48px] flex flex-col items-center gap-y-[10px] w-[315px]">
-        <UIAccordionMobile tab-name="panel10">
+        <UIAccordionMobile tab-name="panel10" variant="blue">
           <template #title><p class="ml-[16px] w-[240px] text-left text-[12px]">Провести аудит и консалтинг по информационной безопасности</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>
-        <UIAccordionMobile tab-name="panel11">
+        <UIAccordionMobile tab-name="panel11" variant="blue">
           <template #title><p class="ml-[16px] w-[240px] text-left text-[12px]">Оказать юридическое сопровождение</p></template>
           <template #description><p>Услуга ИТ-аутсорсинга позволит сократить затраты на ИТ, сделает прозрачным управление инфраструктурой и повысит качество ведения бизнес-процессов.</p></template>
         </UIAccordionMobile>

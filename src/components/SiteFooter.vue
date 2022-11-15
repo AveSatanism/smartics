@@ -15,7 +15,7 @@
           <li><p><router-link to="InfrastructureManagement">управление <br />инфраструктурой</router-link></p></li>
           <li><p><router-link to="AuditIT">аудит ит</router-link></p></li>
           <li><p><router-link to="IT-outsourcing">ит-аутсорсинг <br />и техподдержка</router-link></p></li>
-          <li><p><router-link to="SoftwareDevelopment">разработка по</router-link></p></li>
+          <li><p><router-link to="TechnicalWorks">разработка по</router-link></p></li>
           <li><p><router-link to="IndustrySolutions">отраслевые решения</router-link></p></li>
         </ul>
         <ul class="footer_list text_6 site_color_1">
